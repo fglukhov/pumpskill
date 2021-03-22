@@ -1,0 +1,24 @@
+<svg width="1200" height="96" viewBox="0 0 1200 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle r="47.5" transform="matrix(-1 0 0 1 804.5 48.4473)" fill="#0094FF"/>
+<circle r="15" transform="matrix(-1 0 0 1 636 47.9473)" fill="#0094FF"/>
+<circle r="14.5" transform="matrix(-1 0 0 1 506 47.9473)" stroke="#0094FF"/>
+<circle r="47" transform="matrix(-1 0 0 1 868.5 48.4473)" stroke="#39353E"/>
+<path d="M615 95.4473L523.5 1.44726" stroke="#0094FF"/>
+<path d="M523.5 95.4473L615 1.44726" stroke="#0094FF"/>
+<rect x="-0.5" y="0.5" width="241" height="94" transform="matrix(-1 0 0 1 691 0.947266)" stroke="#39353E"/>
+<rect x="-0.5" y="0.5" width="139" height="94" rx="47" transform="matrix(-1 0 0 1 190 0.947266)" stroke="#0094FF"/>
+<rect x="-0.5" y="0.5" width="139" height="94" rx="47" transform="matrix(-1 0 0 1 1102 0.947266)" stroke="#0094FF"/>
+<rect width="140" height="95" rx="47.5" transform="matrix(-1 0 0 1 232 0.947266)" fill="#343434"/>
+<rect width="140" height="95" rx="47.5" transform="matrix(-1 0 0 1 1144 0.947266)" fill="#0094FF"/>
+<rect width="242" height="95" rx="47.5" transform="matrix(-1 0 0 1 385 0.947266)" fill="#0094FF"/>
+<circle r="15" transform="matrix(-1 0 0 1 326 47.9473)" fill="#0094FF"/>
+<circle r="15" transform="matrix(-1 0 0 1 1059 47.9473)" fill="#39353E"/>
+<circle r="15" transform="matrix(-1 0 0 1 1079 47.9473)" fill="white"/>
+<circle r="14.5" transform="matrix(-1 0 0 1 1099 47.9473)" stroke="white"/>
+<line y1="-0.5" x2="121" y2="-0.5" transform="matrix(-1 0 0 1 757 47.9473)" stroke="#39353E"/>
+<line y1="-0.5" x2="121" y2="-0.5" transform="matrix(-1 8.74228e-08 8.74228e-08 1 506 47.9473)" stroke="#39353E"/>
+<line y1="-0.5" x2="94" y2="-0.5" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 963 47.9473)" stroke="#39353E"/>
+<line y1="-0.5" x2="113" y2="-0.5" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 92 47.9473)" stroke="#0094FF"/>
+<line y1="-0.5" x2="113" y2="-0.5" transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 1257 47.9473)" stroke="#0094FF"/>
+<line y1="-0.5" x2="94" y2="-0.5" transform="matrix(-0.699933 -0.714209 -0.714209 0.699933 901.896 81.5156)" stroke="#0094FF"/>
+</svg>

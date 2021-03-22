@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pumpskill</title>
+  <!--link(rel='icon', href='favicon.ico')-->
+  <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="over-wrapper">
+    <div id="mobile-indicator"></div>
+    <div id="md-indicator"></div>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="row">
+            <div class="col header-col-1">
+              <div class="header-logo"><a href="#"><img src="images/logo.svg" alt="Pumpskill"></a></div>
+            </div>
+            <div class="col header-col-group-r">
+              <div class="row">
+                <div class="col header-col-2">
+                  <div class="navbar-trigger"><span></span><span></span><span></span></div>
+                  <div class="navbar-wrapper">
+                    <ul class="navbar-nav">
+                      <li><a href="#">О&nbsp;школе</a></li>
+                      <li><a href="#">Блог</a></li>
+                      <li><a href="#">Выбрать профессию</a></li>
+                    </ul>
+                    <div class="navbar-soclinks">
+                      <div class="header-soclinks"><a class="header-soclink header-soclink-whatsapp" href="#"></a><a class="header-soclink header-soclink-telegram" href="#"></a></div>
+                    </div>
+                    <div class="navbar-phone">
+                      <div class="header-phone">
+                        <div class="header-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
+                        <div class="header-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказ звонка</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col header-col-3">
+                  <div class="header-soclinks"><a class="header-soclink header-soclink-whatsapp" href="#"></a><a class="header-soclink header-soclink-telegram" href="#"></a></div>
+                </div>
+                <div class="col header-col-4">
+                  <div class="header-phone">
+                    <div class="header-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
+                    <div class="header-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказ звонка</a></div>
+                  </div>
+                </div>
+                <div class="col header-col-5">
+                  <div class="header-login header-login-logged-in">
+                    <div class="header-login-trigger">
+                      <div class="header-login-trigger-pic"><img src="files/user.jpg"></div>
+                      <div class="header-login-trigger-arrow"></div>
+                    </div>
+                    <div class="header-login-popup">
+                      <ul class="header-login-menu">
+                        <li><a href="#">Мое обучение</a></li>
+                        <li><a href="#">Аккаунт/Профиль</a></li>
+                        <li><a href="#">Система лояльности</a></li>
+                      </ul>
+                      <div class="header-logout"><a href="#">Выйти</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Top block-->
+      <div class="section section-top">
+        <div class="container">
+          <div class="section-content">
+            <div class="row">
+              <div class="col section-top-col-1">
+                <div class="section-top-descr">
+                  <h1>Онлайн-школа обучения разработке и&nbsp;программированию</h1>
+                </div>
+              </div>
+              <div class="col section-top-col-2">
+                <div class="section-top-info">
+                  <p>Сделай<br>шаг к&nbsp;новой<br>профессии</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Top block END-->
+      <!-- Профессии-->
+      <div class="section section-prof">
+        <div class="container">
+          <div class="section-content">
+            <div class="section-header">
+              <h2>Выбери, чему ты хочешь научиться</h2>
+            </div>
+            <div class="prof-list">
+              <div class="row">
+                <div class="col"><a class="prof-tmb" href="#">
+                    <div class="cont">
+                      <div class="prof-tmb-pic"><img src="files/prof-1-tmb.jpg"></div>
+                      <div class="prof-tmb-descr">
+                        <h3>Веб разработка для начинающих</h3>
+                        <div class="prof-tmb-text">
+                          <p>Научись создавать сайты с нуля под руководством наставника</p>
+                        </div>
+                      </div>
+                    </div></a></div>
+                <div class="col"><a class="prof-tmb" href="#">
+                    <div class="cont">
+                      <div class="prof-tmb-pic"><img src="files/prof-2-tmb.jpg"></div>
+                      <div class="prof-tmb-descr">
+                        <h3>Программист на Python</h3>
+                        <div class="prof-tmb-text">
+                          <p>Научись программировать на Python с нуля</p>
+                        </div>
+                      </div>
+                    </div></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Профессии END-->
+      <!-- Картинка-->
+      <div class="section section-main-pic"><img src="files/main-pic.jpg"></div>
+      <!-- Картинка END-->
+      <!-- Принципы-->
+      <div class="section section-principles">
+        <div class="container">
+          <div class="section-content">
+            <div class="section-header">
+              <h2>Наши принципы</h2>
+            </div>
+            <div class="principles-list">
+              <div class="row">
+                <div class="col">
+                  <div class="principle-tmb">
+                    <div class="cont">
+                      <div class="principle-tmb-num"></div>
+                      <div class="principle-tmb-descr">
+                        <h3>Принцип 1</h3>
+                        <p>это курс, созданный для тех, кто хочет научиться программировать на одном из самых популярных языков в мире!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="principle-tmb">
+                    <div class="cont">
+                      <div class="principle-tmb-num"></div>
+                      <div class="principle-tmb-descr">
+                        <h3>Принцип 2</h3>
+                        <p>это курс, созданный для тех, кто хочет научиться!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="principle-tmb">
+                    <div class="cont">
+                      <div class="principle-tmb-num"></div>
+                      <div class="principle-tmb-descr">
+                        <h3>Принцип 3</h3>
+                        <p>это курс, созданный для тех, кто хочет научиться!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="principle-tmb">
+                    <div class="cont">
+                      <div class="principle-tmb-num"></div>
+                      <div class="principle-tmb-descr">
+                        <h3>Принцип 4</h3>
+                        <p>это курс, созданный для тех, кто хочет научиться программировать на одном из самых популярных языков в мире!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Принципы END-->
+      <!-- Картинка 2-->
+      <div class="section section-main-pic"><img src="images/main-pic-2.svg"></div>
+      <!-- Картинка 2 END-->
+      <!-- Отзывы-->
+      <div class="section section-reviews">
+        <div class="container">
+          <div class="section-content">
+            <div class="section-header">
+              <h2>О&nbsp;нас говорят</h2>
+            </div>
+            <div class="slider-wrapper reviews-slider-wrapper">
+              <div class="reviews-slider">
+                <div class="slide">
+                  <div class="review-tmb">
+                    <div class="cont">
+                      <div class="review-tmb-author">
+                        <div class="review-tmb-author-pic"><img src="files/review-author-1.jpg"></div>
+                        <div class="review-tmb-author-descr">
+                          <div class="review-tmb-author-name">
+                            <p>Антон Петров</p>
+                          </div>
+                          <div class="review-tmb-author-info">
+                            <p>21 год, Москва</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review-tmb-descr">
+                        <div class="review-tmb-text">
+                          <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                        </div>
+                        <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#">Читать отзыв</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="review-tmb">
+                    <div class="cont">
+                      <div class="review-tmb-author">
+                        <div class="review-tmb-author-pic"><img src="files/review-author-2.jpg"></div>
+                        <div class="review-tmb-author-descr">
+                          <div class="review-tmb-author-name">
+                            <p>Антон Петров</p>
+                          </div>
+                          <div class="review-tmb-author-info">
+                            <p>21 год, Москва</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review-tmb-descr">
+                        <div class="review-tmb-text">
+                          <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения...</p>
+                        </div>
+                        <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#">Читать отзыв</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="review-tmb">
+                    <div class="cont">
+                      <div class="review-tmb-author">
+                        <div class="review-tmb-author-pic"><img src="files/review-author-1.jpg"></div>
+                        <div class="review-tmb-author-descr">
+                          <div class="review-tmb-author-name">
+                            <p>Антон Петров</p>
+                          </div>
+                          <div class="review-tmb-author-info">
+                            <p>21 год, Москва</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review-tmb-descr">
+                        <div class="review-tmb-text">
+                          <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                        </div>
+                        <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#">Читать отзыв</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="review-tmb">
+                    <div class="cont">
+                      <div class="review-tmb-author">
+                        <div class="review-tmb-author-pic"><img src="files/review-author-2.jpg"></div>
+                        <div class="review-tmb-author-descr">
+                          <div class="review-tmb-author-name">
+                            <p>Антон Петров</p>
+                          </div>
+                          <div class="review-tmb-author-info">
+                            <p>21 год, Москва</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review-tmb-descr">
+                        <div class="review-tmb-text">
+                          <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения...</p>
+                        </div>
+                        <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#">Читать отзыв</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Отзывы END-->
+      <!-- Форма-->
+      <div class="section section-with-bg section-order">
+        <div class="container">
+          <div class="section-content">
+            <div class="order-form-wrapper">
+              <div class="section-header">
+                <h2>Поможем в&nbsp;выборе</h2>
+              </div>
+              <div class="row">
+                <div class="col order-col-1">
+                  <div class="order-form">
+                    <form>
+                      <div class="row">
+                        <div class="col col-12">
+                          <div class="form-group">
+                            <label class="placeholder" for="order_name">Ваше имя</label>
+                            <input type="text" name="order_name" id="order_name" required>
+                          </div>
+                        </div>
+                        <div class="col col-order-phone">
+                          <div class="form-group">
+                            <label class="placeholder" for="order_phone">Телефон</label>
+                            <input class="input-phone phone-email-group" type="text" name="order_phone" id="order_phone">
+                          </div>
+                        </div>
+                        <div class="col col-order-or">
+                          <p>или</p>
+                        </div>
+                        <div class="col col-order-email">
+                          <div class="form-group">
+                            <label class="placeholder" for="order_email">E-mail</label>
+                            <input class="phone-email-group" type="email" name="order_email" id="order_email">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-footer">
+                        <input class="btn btn-2" type="submit" value="Оформить заказ">
+                      </div>
+                      <div class="form-agree">
+                        <p>Нажимая кнопку «Отправить» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col order-col-2">
+                  <div class="order-descr">
+                    <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы.</p>
+                    <div class="order-soclinks-wrapper">
+                      <div class="order-soclinks-ttl">
+                        <p>Или пишите нам:</p>
+                      </div>
+                      <div class="order-soclinks">
+                        <div class="soclinks"><a class="soclink soclink-whatsapp" href="#"></a><a class="soclink soclink-telegram" href="#"></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Форма END-->
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <div class="col footer-col-1">
+              <div class="footer-logo"><a href="#"><img src="images/footer-logo.svg" alt="Pumpskill"></a></div>
+              <div class="footer-copy">
+                <p>© 2020 PumpSkill</p>
+              </div>
+              <div class="footer-agree">
+                <p><a href="#">Пользовательское соглашение</a></p>
+              </div>
+              <div class="footer-dev-over-wrapper">
+                <div class="cont">
+                  <div class="footer-dev-wrapper"><a class="footer-dev" href="#">Made&nbsp;by <span>PARADIGMA</span></a></div>
+                  <div class="footer-art-direction">
+                    <p>Art direction by&nbsp;<a href="#">Gromadin</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col footer-col-2">
+              <div class="footer-ttl">Pumpskill</div>
+              <ul class="footer-menu">
+                <li><a href="#">О&nbsp;школе</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Выбрать профессию</a></li>
+              </ul>
+            </div>
+            <div class="col footer-col-3">
+              <div class="footer-ttl">Контакты</div>
+              <div class="footer-contacts">
+                <div class="footer-phone">
+                  <div class="footer-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
+                  <div class="footer-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Обратный звонок</a></div>
+                </div>
+                <div class="footer-soclinks-wrapper">
+                  <div class="footer-soclinks"><a class="footer-soclink footer-soclink-fb" href="#"><img class="svg-inline" src="images/footer-fb.svg"></a><a class="footer-soclink footer-soclink-vk" href="#"><img class="svg-inline" src="images/footer-vk.svg"></a><a class="footer-soclink footer-soclink-twitter" href="#"><img class="svg-inline" src="images/footer-twitter.svg"></a><a class="footer-soclink footer-soclink-telegram" href="#"><img class="svg-inline" src="images/footer-telegram.svg"></a><a class="footer-soclink footer-soclink-whatsapp" href="#"><img class="svg-inline" src="images/footer-whatsapp.svg"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade form-modal" id="consultModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="order-form-wrapper">
+            <div class="section-header">
+              <h2>Получи полную программу и&nbsp;консультацию</h2>
+            </div>
+            <div class="row">
+              <div class="col order-col-1">
+                <div class="order-form">
+                  <form>
+                    <input type="hidden" name="program_modal_course" id="program_modal_course">
+                    <div class="row">
+                      <div class="col col-12">
+                        <div class="form-group">
+                          <label class="placeholder" for="program_modal_name">Ваше имя</label>
+                          <input type="text" name="program_modal_name" id="program_modal_name" required>
+                        </div>
+                      </div>
+                      <div class="col col-order-phone">
+                        <div class="form-group">
+                          <label class="placeholder" for="program_modal_phone">Телефон</label>
+                          <input class="input-phone phone-email-group" type="text" name="program_modal_phone" id="program_modal_phone">
+                        </div>
+                      </div>
+                      <div class="col col-order-or">
+                        <p>или</p>
+                      </div>
+                      <div class="col col-order-email">
+                        <div class="form-group">
+                          <label class="placeholder" for="program_modal_email">E-mail</label>
+                          <input class="phone-email-group" type="email" name="program_modal_email" id="program_modal_email">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-footer">
+                      <input class="btn btn-2" type="submit" value="Оформить заказ">
+                    </div>
+                    <div class="form-agree">
+                      <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col order-col-2">
+                <div class="order-descr">
+                  <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы.</p>
+                  <div class="order-soclinks-wrapper">
+                    <div class="order-soclinks-ttl">
+                      <p>Или пишите нам:</p>
+                    </div>
+                    <div class="order-soclinks">
+                      <div class="soclinks"><a class="soclink soclink-whatsapp" href="#"></a><a class="soclink soclink-telegram" href="#"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade form-modal" id="orderModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="order-form-wrapper">
+            <div class="section-header">
+              <h2>Запишись сейчас и получи скидку на курс 40%</h2>
+            </div>
+            <div class="row">
+              <div class="col order-col-1">
+                <div class="order-form">
+                  <form>
+                    <div class="row">
+                      <div class="col col-12">
+                        <div class="form-group">
+                          <label class="placeholder" for="order_modal_name">Ваше имя</label>
+                          <input type="text" name="order_modal_name" id="order_modal_name" required>
+                        </div>
+                      </div>
+                      <div class="col col-order-phone">
+                        <div class="form-group">
+                          <label class="placeholder" for="order_modal_phone">Телефон</label>
+                          <input class="input-phone phone-email-group" type="text" name="order_modal_phone" id="order_modal_phone">
+                        </div>
+                      </div>
+                      <div class="col col-order-or">
+                        <p>или</p>
+                      </div>
+                      <div class="col col-order-email">
+                        <div class="form-group">
+                          <label class="placeholder" for="order_modal_email">E-mail</label>
+                          <input class="phone-email-group" type="email" name="order_modal_email" id="order_modal_email">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-footer">
+                      <input class="btn btn-2" type="submit" value="Оформить заказ">
+                    </div>
+                    <div class="form-agree">
+                      <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col order-col-2">
+                <div class="order-descr">
+                  <div class="info-list info-list-alt">
+                    <div class="info-tmb">
+                      <div class="info-tmb-ttl">Старт курса:</div>
+                      <div class="info-tmb-text">15 ноября</div>
+                    </div>
+                    <div class="info-tmb">
+                      <div class="info-tmb-ttl">Осталось:</div>
+                      <div class="info-tmb-text">3 места</div>
+                    </div>
+                    <div class="info-tmb info-tmb-price">
+                      <div class="info-tmb-ttl">Стоимость курса:</div>
+                      <div class="info-tmb-text">25 500 ₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade small-modal" id="callbackModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header">
+            <h2>Поможем в выборе</h2>
+          </div>
+          <div class="modal-body">
+            <div class="modal-text">
+              <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы</p>
+            </div>
+            <div class="modal-form">
+              <form>
+                <div class="form-group">
+                  <label class="placeholder" for="callback_phone">Телефон</label>
+                  <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
+                </div>
+                <div class="form-footer">
+                  <input class="btn btn-2" type="submit" value="Отправить">
+                </div>
+                <div class="form-agree">
+                  <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade login-modal" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header">
+            <h2>Вход</h2>
+          </div>
+          <div class="modal-body">
+            <h5>Войти с помощью</h5>
+            <div class="login-extrenal"><a class="login-extrenal-item" href="#"><img src="images/ico-gmail.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-facebook.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-vk.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-github.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-mailru.png"></a></div>
+            <h5>Войти по e-mail</h5>
+            <div class="modal-form login-form">
+              <form>
+                <div class="row">
+                  <div class="col col-12 col-login-narrow">
+                    <div class="form-group">
+                      <label class="placeholder" for="email_email">E-mail</label>
+                      <input type="email" name="email_email" id="email_email" required>
+                    </div>
+                  </div>
+                  <div class="col col-login-narrow">
+                    <div class="form-group">
+                      <label class="placeholder" for="email_password">Пароль</label>
+                      <input class="password" type="password" name="email_password" id="email_password" required>
+                    </div>
+                  </div>
+                  <div class="col col-login-narrow">
+                    <div class="form-checkboxes">
+                      <div class="form-checkbox">
+                        <input type="checkbox" name="login_remember" id="login_remember">
+                        <label for="login_remember">Запомнить меня</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col-login-narrow">
+                    <div class="forgot-link-wrapper"><a href="#">Забыли пароль?</a></div>
+                  </div>
+                  <div class="col col-login-narrow">
+                    <div class="form-footer">
+                      <input class="btn btn-3" type="submit" value="Войти">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <h3>Вы у нас впервые?</h3>
+              <div class="modal-register-button-wrapper"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#registerModal">Зарегистрироваться</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade login-modal" id="registerModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-header">
+            <h2>Регистрация</h2>
+          </div>
+          <div class="modal-body">
+            <div class="modal-form login-form">
+              <form>
+                <div class="row">
+                  <div class="col col-12">
+                    <div class="form-group">
+                      <label class="placeholder" for="register_name">Ваше имя</label>
+                      <input type="text" name="register_name" id="register_name" required>
+                    </div>
+                  </div>
+                  <div class="col col-12">
+                    <div class="form-group">
+                      <label class="placeholder" for="register_lastname">Ваша фамилия</label>
+                      <input type="text" name="register_lastname" id="register_lastname" required>
+                    </div>
+                  </div>
+                  <div class="col col-login-narrow">
+                    <div class="form-group">
+                      <label class="placeholder" for="register_phone">Телефон</label>
+                      <input class="input-phone" type="text" name="register_phone" id="register_phone" required>
+                    </div>
+                  </div>
+                  <div class="col col-12">
+                    <div class="form-group">
+                      <label class="placeholder" for="register_email">E-mail</label>
+                      <input type="email" name="register_email" id="register_email" required>
+                    </div>
+                  </div>
+                  <div class="col col-login-narrow">
+                    <div class="form-group">
+                      <label class="placeholder" for="register_password">Пароль</label>
+                      <input class="password" type="password" name="register_password" id="register_password" required>
+                    </div>
+                  </div>
+                  <div class="col col-login-narrow">
+                    <div class="form-group">
+                      <label class="placeholder" for="register_password_repeat">Повторите пароль</label>
+                      <input class="password-repeat" type="password" name="register_password_repeat" id="register_password_repeat" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-footer">
+                  <input class="btn btn-2" type="submit" value="Зарегистрироваться">
+                </div>
+                <div class="form-agree">
+                  <p>Нажимая кнопку «Зарегистрироваться» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade small-modal" id="successModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="success-modal-ttl">
+              <p>Заявка отправлена</p>
+            </div>
+            <div class="success-modal-text">
+              <p>Ожидайте звонка менеджера или письма на почту</p>
+            </div>
+            <div class="success-modal-button">
+              <button class="btn btn-3" type="button" data-dismiss="modal" aria-label="Close">Понятно</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/additional-methods.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wNumb.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/greensock/TweenMax.min.js"></script>
+    <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+    <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+    <script src="js/iscroll-probe.js"></script>
+    <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+    <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script><script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/main.js"></script>
+  </div>
+</body>
