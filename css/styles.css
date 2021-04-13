@@ -630,7 +630,8 @@ main {
   margin-left: auto;
   margin-right: auto; }
 
-.section-main-pic img {
+.section-main-pic img,
+.section-profession-pic img {
   width: 100%; }
 
 .principles-list .row {
@@ -3865,7 +3866,8 @@ textarea.error {
   .how-pic {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    height: 350px; }
   .how-pic-2 {
     border-top: none;
     border-left: 1px solid #39353E; }
@@ -4444,7 +4446,8 @@ textarea.error {
   .how-tmb-num {
     margin: 0 20px 0 0; }
   .how-pic {
-    padding: 15px; }
+    padding: 15px;
+    height: 190px; }
   .section-works-header {
     margin-bottom: 0; }
   .section-works-slide {
@@ -4814,6 +4817,8 @@ textarea.error {
   .section-cert + .section-teachers {
     margin-top: -50px; }
   .section-main-pic .marquee-item {
-    width: 400px; } }
+    width: 400px; }
+  .courses-info {
+    margin: 0 15px; } }
 
 /*# sourceMappingURL=styles.css.map */
