@@ -18,100 +18,23 @@ function animateAll() {
 
 		var controller = new ScrollMagic.Controller();
 
-		// Headers
-
-		$(".section-header").each(function (index, element) {
-
-			var headerTween = TweenMax.to($(element), .7, {
-				x: 0,
-				opacity: 1,
-				ease: Sine.easeOut,
-				overwrite: "none",
-			});
-
-			var headerScene = new ScrollMagic.Scene({
-				triggerElement: element.closest(".section"),
-				offset: 0
-			})
-				.setTween(headerTween)
-				.addTo(controller);
-
+		var sectionTopInfoTween = TweenMax.to($(".section-top-info"), 1, {
+			scale: 1,
+			opacity: 1,
+			rotation: -15,
+			ease: Back.easeOut.config(1.7),
+			overwrite: "none",
+			delay: .5
 		});
 
-		// Headers END
+		var sectionTopInfoScene = new ScrollMagic.Scene({
+			triggerElement: ".section-top",
+			offset: 100
+		})
+			.setTween(sectionTopInfoTween)
+			.addTo(controller);
 
-		// Texts
-
-		$(".text-wrapper").each(function (index, element) {
-
-			var textTween = TweenMax.to($(element), .7, {
-				x: 0,
-				opacity: 1,
-				ease: Sine.easeOut,
-				overwrite: "none",
-				delay: .3
-			});
-
-			var textScene = new ScrollMagic.Scene({
-				triggerElement: element.closest(".section"),
-				offset: 0
-			})
-				.setTween(textTween)
-				.addTo(controller);
-
-		});
-
-		// Texts END
-
-		// Sliders
-
-		$(".custom-slider-wrapper").each(function (index, element) {
-
-			var sliderTween = TweenMax.to($(element), .7, {
-				x: 0,
-				opacity: 1,
-				ease: Sine.easeOut,
-				overwrite: "none",
-				delay: .6
-			});
-
-			var sliderScene = new ScrollMagic.Scene({
-				triggerElement: element.closest(".section"),
-				offset: 0
-			})
-				.setTween(sliderTween)
-				.addTo(controller);
-
-		});
-
-		// Sliders END
-
-		// Pros
-
-		$(".pros-tmb").each(function (index, element) {
-
-			var prosTween = TweenMax.to($(element), .7, {
-				x: 0,
-				opacity: 1,
-				ease: Sine.easeOut,
-				delay: $(element).prevAll().length * .3,
-				overwrite: "none",
-			});
-
-			var prosScene = new ScrollMagic.Scene({
-				triggerElement: element.closest(".section"),
-				offset: 0
-			})
-				.setTween(prosTween)
-				.addTo(controller);
-
-		});
-
-		// Pros END
-
-		// Contacts map
-
-		var contactsMapTween = TweenMax.to($(".contacts-map"), 1, {
+		var pageHeaderPicTween = TweenMax.to($(".section-profession-header .page-header-pic"), 1, {
 			scale: 1,
 			opacity: 1,
 			ease: Back.easeOut.config(1.7),
@@ -119,47 +42,15 @@ function animateAll() {
 			delay: .5
 		});
 
-		var contactsMapScene = new ScrollMagic.Scene({
-			triggerElement: ".section-location",
+		var pageHeaderPicScene = new ScrollMagic.Scene({
+			triggerElement: "body",
 			offset: 100
 		})
-			.setTween(contactsMapTween)
+			.setTween(pageHeaderPicTween)
 			.addTo(controller);
 
-		// Contacts map END
-
-		// Services
-
-		$(".services-block").each(function (index, element) {
-
-			var servicesTween = TweenMax.to($(element), 1, {
-				x: 0,
-				opacity: 1,
-				ease: Sine.easeOut,
-				delay: $(element).prevAll().length * .5,
-				overwrite: "none",
-			});
-
-			var servicesScene = new ScrollMagic.Scene({
-				triggerElement: element.closest(".section"),
-				offset: 0
-			})
-				.setTween(servicesTween)
-				.addTo(controller);
-
-		});
-
-		// Services END
-
-	} else if ($("#mobile-indicator").css("display") == "block") {
-
-		$("body").removeClass("animated");
-
-		//controller = controller.enabled(false);
-		//controller = controller.destroy(true);
-
 	}
-
+		
 }
 
 $(window).on("resize", function () {
