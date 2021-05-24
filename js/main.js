@@ -50,6 +50,81 @@ var baseUrl = "";
 
 $(document).ready(function() {
 
+	// Calc range
+
+	$(".calc-result-slider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		arrows: false,
+		swipe: false,
+		dots: false,
+		rows: 0,
+		adaptiveHeight: true
+	});
+
+	if ($("#calcRange").length) {
+
+		var calcRangeSlider = document.getElementById('calcRange');
+
+		noUiSlider.create(calcRangeSlider, {
+			start: 50000,
+			step: 10000,
+			animate: true,
+			tooltips: [true],
+			range: {
+				min: 50000,
+				max: 250000
+			},
+			format: wNumb({
+				decimals: 0,
+				thousand: ' '
+			})
+		});
+
+		calcRangeSlider.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
+
+			var calcRangeValue = values[handle],
+				calcPercent = positions[handle].toFixed(0);
+
+			var calcSkills = $(".calc-skill");
+
+			calcSkillsIndex = Math.floor(calcSkills.length * calcPercent / 100);
+
+			if (calcSkillsIndex == 0) {
+				calcSkillsIndex = 1;
+			}
+
+			calcSkills.removeClass("active");
+
+			calcSkills.filter(function () {
+
+				return $(this).prevAll().length == calcSkillsIndex - 1;
+
+			}).addClass("active");
+
+			calcSkills.filter(function () {
+
+				return $(this).prevAll().length == calcSkillsIndex - 1;
+
+			}).prevAll().addClass("active");
+
+			calcResultIndex = Math.floor($(".calc-result-slider .slide").length * calcPercent / 100);
+
+			if (calcResultIndex == $(".calc-result-slider .slide").length) {
+				calcResultIndex = $(".calc-result-slider .slide").length - 1;
+			}
+
+			console.log(calcResultIndex)
+
+			$(".calc-result-slider").slick("slickGoTo", calcResultIndex);
+
+		});
+
+	}
+
+	// Calc range END
+
 	// Marquee
 
 	$(".marquee-list").each(function () {

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/nouislider.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -110,116 +111,146 @@
           <div class="section-body">
             <div class="container">
               <div class="calc-wrapper">
-                <div class="calc-top">
-                  <div class="row calc-row">
-                    <div class="col calc-col-1">
-                      <div class="calc-descr">
-                        <div class="section-header">
-                          <h2>Что вы получите?</h2>
-                        </div>
-                        <div class="calc-text">
-                          <p>Выберите скиллы и узнайте какую зарплату вы можете получить</p>
-                        </div>
-                        <div class="calc-checkboxes">
-                          <div class="calc-checkbox">
-                            <input type="checkbox" name="calc[]" id="calc_1">
-                            <label for="calc_1">Bootstrap4</label>
-                          </div>
-                          <div class="calc-checkbox">
-                            <input type="checkbox" name="calc[]" id="calc_2">
-                            <label for="calc_2">JS скрипты</label>
-                          </div>
-                          <div class="calc-checkbox">
-                            <input type="checkbox" name="calc[]" id="calc_3">
-                            <label for="calc_3">Стили CSS</label>
-                          </div>
-                          <div class="calc-checkbox">
-                            <input type="checkbox" name="calc[]" id="calc_4">
-                            <label for="calc_4">Стили CSS</label>
-                          </div>
-                          <div class="calc-checkbox">
-                            <input type="checkbox" name="calc[]" id="calc_5">
-                            <label for="calc_5">HTML страницы</label>
-                          </div>
-                          <div class="calc-checkbox">
-                            <input type="checkbox" name="calc[]" id="calc_6">
-                            <label for="calc_6">Репо на GitHub</label>
-                          </div>
-                          <div class="calc-checkbox">
-                            <input type="checkbox" name="calc[]" id="calc_7">
-                            <label for="calc_7">Bootstrap4</label>
-                          </div>
-                          <div class="calc-checkbox">
-                            <input type="checkbox" name="calc[]" id="calc_8">
-                            <label for="calc_8">JS скрипты</label>
-                          </div>
-                          <div class="calc-checkbox">
-                            <input type="checkbox" name="calc[]" id="calc_9">
-                            <label for="calc_9">Bootstrap4</label>
-                          </div>
-                          <div class="calc-checkbox">
-                            <input type="checkbox" name="calc[]" id="calc_10">
-                            <label for="calc_10">JS скрипты</label>
-                          </div>
-                          <div class="calc-checkbox">
-                            <input type="checkbox" name="calc[]" id="calc_11">
-                            <label for="calc_11">Bootstrap4</label>
-                          </div>
-                        </div>
-                      </div>
+                <div class="section-header">
+                  <h2>Что вы получите?</h2>
+                </div>
+                <div class="calc-text">
+                  <p>Выбери какой уровнь ты хочешь достигнуть.</p>
+                </div>
+                <div class="calc-range-wrapper">
+                  <div class="calc-range" id="calcRange"></div>
+                </div>
+                <h3>Навыки</h3>
+                <div class="calc-skills">
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>Синтаксис	Python</p>
                     </div>
-                    <div class="col calc-col-2">
-                      <div class="calc-slider-wrapper">
-                        <div class="calc-slider">
-                          <div class="slide"><img src="files/calc-pic-1.jpg"></div>
-                          <div class="slide"><img src="files/calc-pic-2.jpg"></div>
-                          <div class="slide"><img src="files/calc-pic-1.jpg"></div>
-                          <div class="slide"><img src="files/calc-pic-2.jpg"></div>
-                          <div class="slide"><img src="files/calc-pic-1.jpg"></div>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>GitHub</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>ООП</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>Flask</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>Django</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>Heroku</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>VPS</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>Senry</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>Linux</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>Nginx</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>Docker</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>Celery</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>RestAPI</p>
+                    </div>
+                  </div>
+                  <div class="calc-skill">
+                    <div class="cont">
+                      <p>PyTest</p>
                     </div>
                   </div>
                 </div>
-                <div class="calc-bottom">
-                  <div class="row calc-row">
-                    <div class="col calc-col-1">
-                      <div class="calc-prof">
-                        <div class="calc-prof-ttl">Чтобы добиться цели вам подойдет:</div>
-                        <div class="calc-prof-slider-wrapper">
-                          <div class="calc-prof-slider">
-                            <div class="slide">
-                              <p>Название курса профессии</p>
-                            </div>
-                            <div class="slide">
-                              <p>Название курса профессии 2</p>
-                            </div>
-                            <div class="slide">
-                              <p>Название курса профессии 3</p>
-                            </div>
-                            <div class="slide">
-                              <p>Название курса профессии 4</p>
-                            </div>
+                <div class="calc-result-slider-wrapper">
+                  <div class="calc-result-slider">
+                    <div class="slide">
+                      <div class="calc-result">
+                        <h3>Результат</h3>
+                        <p>Владеет полным стэком технологий, работает на Linux с Docker контейнерами, пишет асинхрон.</p>
+                        <div class="calc-result-course">
+                          <div class="cont">
+                            <h3>Рекомендованный курс</h3>
+                            <p><a href="#">Профессия fullstack программист на Python.</a></p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col calc-col-2">
-                      <div class="calc-level">
-                        <div class="calc-level-slider-wrapper">
-                          <div class="calc-level-slider">
-                            <div class="slide">
-                              <div class="calc-level-ttl">Junior</div>
-                              <div class="calc-level-income">50&nbsp;000&nbsp;- 70&nbsp;000&nbsp;₽</div>
-                            </div>
-                            <div class="slide">
-                              <div class="calc-level-ttl">Middle</div>
-                              <div class="calc-level-income">70&nbsp;000&nbsp;- 100&nbsp;000&nbsp;₽</div>
-                            </div>
-                            <div class="slide">
-                              <div class="calc-level-ttl">Senior</div>
-                              <div class="calc-level-income">100&nbsp;000&nbsp;- 200&nbsp;000&nbsp;₽</div>
-                            </div>
+                    <div class="slide">
+                      <div class="calc-result">
+                        <h3>Результат</h3>
+                        <p>Второй результат</p>
+                        <div class="calc-result-course">
+                          <div class="cont">
+                            <h3>Второй курс</h3>
+                            <p><a href="#">Профессия fullstack программист на Python.</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="calc-result">
+                        <h3>Результат</h3>
+                        <p>Третий результат</p>
+                        <div class="calc-result-course">
+                          <div class="cont">
+                            <h3>Третий курс</h3>
+                            <p><a href="#">Профессия fullstack программист на Python.</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="calc-result">
+                        <h3>Результат</h3>
+                        <p>Четвертый результат</p>
+                        <div class="calc-result-course">
+                          <div class="cont">
+                            <h3>Рекомендованный курс</h3>
+                            <p><a href="#">Профессия fullstack программист на Python.</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="calc-result">
+                        <h3>Результат</h3>
+                        <p>Пятый результат</p>
+                        <div class="calc-result-course">
+                          <div class="cont">
+                            <h3>Рекомендованный курс</h3>
+                            <p><a href="#">Профессия fullstack программист на Python.</a></p>
                           </div>
                         </div>
                       </div>
@@ -1499,7 +1530,8 @@
     <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script><script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="js/nouislider.js"></script><script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
   </div>
