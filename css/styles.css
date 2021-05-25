@@ -3423,7 +3423,7 @@ ul.header-login-menu a:focus {
 
 .calc-result-slider .slick-list,
 .calc-result-slider .slick-track {
-  overflow: visible; }
+  overflow: visible !important; }
 
 .calc-result-course {
   background: #0094FF;
