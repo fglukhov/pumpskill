@@ -281,7 +281,8 @@ a:hover {
   outline: none !important; }
 
 .slick-arrow.slick-disabled {
-  opacity: .2 !important; }
+  opacity: .2 !important;
+  background: #0094FF !important; }
 
 .slick-arrow:before {
   content: "";
@@ -3554,7 +3555,12 @@ textarea.error {
   border: 1px solid #39353E;
   position: absolute;
   left: 0;
-  top: 6px; }
+  top: 6px;
+  background: url(../images/checkbox.svg) center 2px no-repeat;
+  background-size: 0 0; }
+
+.form-checkbox input[type=checkbox]:checked + label:before {
+  background-size: 10px 9px; }
 
 .forgot-link-wrapper {
   font-size: 18px;
@@ -4990,9 +4996,6 @@ textarea.error {
     margin-top: 15px;
     margin-bottom: 10px; }
   .header-login-trigger {
-    position: fixed;
-    right: 70px;
-    top: 15px;
     padding: 0 20px 0 0; }
   .header-login-trigger-pic {
     width: 34px;
@@ -5001,7 +5004,7 @@ textarea.error {
     top: 14px; }
   .header-login-popup {
     position: fixed;
-    top: 67px; }
+    top: 53px; }
   .section-wide .section-body .container {
     padding: 0 5px; }
   .program-wrapper {
