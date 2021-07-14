@@ -1,0 +1,8 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+	<title>Favocon 1-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #0094ff } 
+	</style>
+	<path id="Layer" class="shp0" d="M0 0L16 0L16 16L0 16L0 0Z" />
+</svg>
