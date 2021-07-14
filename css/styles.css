@@ -4201,7 +4201,8 @@ textarea.error {
     top: 14px;
     z-index: 350; }
   .header-content {
-    padding: 7px 53px 5px 0px; }
+    padding: 7px 53px 5px 0px;
+    min-height: 50px; }
   .header-login {
     padding: 2px 0 0 0; }
   .btn-login,
@@ -4996,10 +4997,11 @@ textarea.error {
     margin-top: 15px;
     margin-bottom: 10px; }
   .header-login-trigger {
-    padding: 0 20px 0 0; }
+    padding: 0 15px 0 0;
+    margin: 1px 0 5px 0; }
   .header-login-trigger-pic {
-    width: 34px;
-    height: 34px; }
+    width: 30px;
+    height: 30px; }
   .header-login-trigger-arrow {
     top: 14px; }
   .header-login-popup {
