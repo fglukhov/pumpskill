@@ -300,6 +300,8 @@ $(document).ready(function() {
 
 	anchorsMenu();
 
+	stickyBlocks();
+
 	// FAQ
 
 	$("body").on("click", ".faq-item-ttl", function () {
@@ -1293,4 +1295,82 @@ function initSliders() {
 
 	});
 
+}
+
+function stickyBlocks() {
+
+	if (($("#md-indicator").css("display") != "block")) {
+
+		var stickyElements = $(".sticky-block").filter(function () {
+				return !$(this).find(".news-filter").length
+			}),
+			topOffset = 80,
+			topOffsetProgram = 0;
+
+		$(window).on("resize scroll touchmove", function () {
+
+			stickyElements.each(function () {
+
+				$(this).data("orig-width", $(this).outerWidth());
+
+				$(this).closest(".sticky-wrapper").css({
+					minHeight: $(this).outerHeight()
+				});
+
+				var el = $(this),
+					fixedHeaderHeight = $("header").outerHeight(),
+					elHeight = $(this).outerHeight(),
+					elWrapper = $(this).closest(".sticky-wrapper"),
+					wrapperHeight = elWrapper.outerHeight(),
+					scrollPos = $(window).scrollTop();
+
+				let scrollCondition = scrollPos > elWrapper.offset().top - fixedHeaderHeight - 10;
+
+				let stickCondition = true;
+
+				topOffset = 0;
+
+				topPos = 90;
+
+				if (scrollCondition && stickCondition) {
+
+					el.addClass("fixed").css({
+
+						top: topPos,
+						width: el.data("orig-width")
+
+					});
+
+					if (scrollPos > (elWrapper.offset().top + wrapperHeight - elHeight - topOffset - fixedHeaderHeight - 10)) {
+
+						el.css({
+
+							marginTop: (elWrapper.offset().top + wrapperHeight - elHeight - topOffset - fixedHeaderHeight) - scrollPos - 10
+
+						});
+
+					} else {
+
+						el.css({
+							marginTop: 0
+						});
+
+					}
+
+				} else {
+
+					el.removeClass("fixed").css({
+
+						width: "auto",
+						marginTop: 0,
+						top: 0
+
+					})
+
+				}
+
+			});
+
+		});
+	}
 }
