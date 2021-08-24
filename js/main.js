@@ -1313,9 +1313,9 @@ function stickyBlocks() {
 
 				$(this).data("orig-width", $(this).outerWidth());
 
-				$(this).closest(".sticky-wrapper").css({
-					minHeight: $(this).outerHeight()
-				});
+				// $(this).closest(".sticky-wrapper").css({
+				// 	minHeight: $(this).outerHeight()
+				// });
 
 				var el = $(this),
 					fixedHeaderHeight = $("header").outerHeight(),
@@ -1324,13 +1324,13 @@ function stickyBlocks() {
 					wrapperHeight = elWrapper.outerHeight(),
 					scrollPos = $(window).scrollTop();
 
-				let scrollCondition = scrollPos > elWrapper.offset().top - fixedHeaderHeight - 10;
+				let scrollCondition = scrollPos > elWrapper.offset().top - fixedHeaderHeight - 30;
 
 				let stickCondition = true;
 
 				topOffset = 0;
 
-				topPos = 90;
+				topPos = fixedHeaderHeight + 30;
 
 				if (scrollCondition && stickCondition) {
 
@@ -1341,11 +1341,11 @@ function stickyBlocks() {
 
 					});
 
-					if (scrollPos > (elWrapper.offset().top + wrapperHeight - elHeight - topOffset - fixedHeaderHeight - 10)) {
+					if (scrollPos > (elWrapper.offset().top + wrapperHeight - elHeight - topOffset - fixedHeaderHeight- 30)) {
 
 						el.css({
 
-							marginTop: (elWrapper.offset().top + wrapperHeight - elHeight - topOffset - fixedHeaderHeight) - scrollPos - 10
+							marginTop: (elWrapper.offset().top + wrapperHeight - elHeight - topOffset - fixedHeaderHeight - 30) - scrollPos
 
 						});
 

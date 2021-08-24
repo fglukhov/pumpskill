@@ -1,353 +1,287 @@
 <!DOCTYPE html>
-<html lang="ru"></html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Pumpskill</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="icon-16.png" sizes="16x16" type="image/png">
-  <link rel="icon" href="icon-32.png" sizes="32x32" type="image/png">
-  <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap-select.min.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-  <link rel="stylesheet" href="css/nouislider.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <div class="over-wrapper">
-    <div id="mobile-indicator"></div>
-    <div id="md-indicator"></div>
-    <header>
-      <div class="container">
-        <div class="header-content">
-          <div class="row">
-            <div class="col header-col-1">
-              <div class="header-logo"><a href="#"><img src="images/logo.svg" alt="Pumpskill"></a></div>
-            </div>
-            <div class="col header-col-group-r">
-              <div class="row">
-                <div class="col header-col-2">
-                  <div class="navbar-trigger"><span></span><span></span><span></span></div>
-                  <div class="navbar-wrapper">
-                    <ul class="navbar-nav">
-                      <li><a href="#">О&nbsp;школе</a></li>
-                      <li><a href="#">Блог</a></li>
-                      <li><a href="#">Выбрать профессию</a></li>
-                    </ul>
-                    <div class="navbar-soclinks">
-                      <div class="header-soclinks"><a class="header-soclink header-soclink-whatsapp" href="#"></a><a class="header-soclink header-soclink-telegram" href="#"></a></div>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pumpskill</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="icon-16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="icon-32.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="over-wrapper">
+      <div id="mobile-indicator"></div>
+      <div id="md-indicator"></div>
+      <header>
+        <div class="container">
+          <div class="header-content">
+            <div class="row">
+              <div class="col header-col-1">
+                <div class="header-logo"><a href="#"><img src="images/logo.svg" alt="Pumpskill"></a></div>
+              </div>
+              <div class="col header-col-group-r">
+                <div class="row">
+                  <div class="col header-col-2">
+                    <div class="navbar-trigger"><span></span><span></span><span></span></div>
+                    <div class="navbar-wrapper">
+                      <ul class="navbar-nav">
+                        <li><a href="#">О&nbsp;школе</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Выбрать профессию</a></li>
+                      </ul>
+                      <div class="navbar-soclinks">
+                        <div class="header-soclinks"><a class="header-soclink header-soclink-whatsapp" href="#"></a><a class="header-soclink header-soclink-telegram" href="#"></a></div>
+                      </div>
+                      <div class="navbar-phone">
+                        <div class="header-phone">
+                          <div class="header-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
+                          <div class="header-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказ звонка</a></div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="navbar-phone">
-                      <div class="header-phone">
-                        <div class="header-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
-                        <div class="header-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказ звонка</a></div>
-                      </div>
+                  </div>
+                  <div class="col header-col-3">
+                    <div class="header-soclinks"><a class="header-soclink header-soclink-whatsapp" href="#"></a><a class="header-soclink header-soclink-telegram" href="#"></a></div>
+                  </div>
+                  <div class="col header-col-4">
+                    <div class="header-phone">
+                      <div class="header-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
+                      <div class="header-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказ звонка</a></div>
                     </div>
                   </div>
-                </div>
-                <div class="col header-col-3">
-                  <div class="header-soclinks"><a class="header-soclink header-soclink-whatsapp" href="#"></a><a class="header-soclink header-soclink-telegram" href="#"></a></div>
-                </div>
-                <div class="col header-col-4">
-                  <div class="header-phone">
-                    <div class="header-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
-                    <div class="header-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказ звонка</a></div>
-                  </div>
-                </div>
-                <div class="col header-col-5">
-                  <div class="header-login"><a class="btn btn-login" href="#" data-toggle="modal" data-target="#loginModal"><span>Вход</span></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <!-- Article header-->
-      <div class="section section-page-header section-article-header">
-        <div class="container">
-          <div class="section-content">
-            <ul class="breadcrumb">
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Блог</a></li>
-              <li><span>Я уже знаю Python. Будет ли мне полезен курс?</span></li>
-            </ul>
-            <h1>Я уже знаю Python. Будет ли мне полезен курс?</h1>
-            <div class="article-date">12 февраля 2021 в 12:35</div>
-          </div>
-        </div>
-      </div>
-      <!-- Article header END-->
-      <!-- Контент статьи-->
-      <div class="article-content">
-        <div class="container">
-          <div class="article-content-inner">
-            <div class="slider-wrapper slider-countable-custom-wrapper photo-slider-wrapper">
-              <div class="photo-slider slider-countable slider-countable-custom">
-                <div class="slide"><img src="files/article-slide-1.jpg"></div>
-                <div class="slide"><img src="files/article-slide-2.jpg"></div>
-                <div class="slide"><img src="files/article-slide-1.jpg"></div>
-                <div class="slide"><img src="files/article-slide-2.jpg"></div>
-              </div>
-            </div>
-            <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
-            <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
-            <h2>Вы получите навыки</h2>
-            <ul>
-              <li>Основы html, css, js</li>
-              <li>Создавать адаптивную верстку на Bootstrap4</li>
-              <li>Писать стили на CSS и подключать их к проекту</li>
-              <li>Писать JS скрипты</li>
-            </ul>
-            <h3>Вы получите навыки</h3>
-            <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
-            <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
-            <div class="article-pic"><img src="files/article-pic.jpg"></div>
-            <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Контент статьи END-->
-      <!-- Читайте также-->
-      <div class="section section-blog-more">
-        <div class="container">
-          <div class="section-content">
-            <div class="section-header">
-              <h2>Читайте также</h2>
-            </div>
-            <div class="slider-wrapper slider-countable-custom-wrapper blog-slider-wrapper">
-              <div class="blog-slider slider-countable slider-countable-custom">
-                <div class="slide"><a class="blog-tmb" href="#">
-                    <div class="row">
-                      <div class="blog-tmb-descr">
-                        <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
-                        <h3>Я уже знаю Python. Будет ли мне полезен курс?</h3>
-                        <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
-                      </div>
-                      <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
-                    </div></a></div>
-                <div class="slide"><a class="blog-tmb" href="#">
-                    <div class="row">
-                      <div class="blog-tmb-descr">
-                        <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
-                        <h3>Я уже знаю Python</h3>
-                        <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код.</p>
-                      </div>
-                      <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
-                    </div></a></div>
-                <div class="slide"><a class="blog-tmb" href="#">
-                    <div class="row">
-                      <div class="blog-tmb-descr">
-                        <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
-                        <h3>Я уже знаю Python. Будет ли мне полезен курс?</h3>
-                        <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
-                      </div>
-                      <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
-                    </div></a></div>
-                <div class="slide"><a class="blog-tmb" href="#">
-                    <div class="row">
-                      <div class="blog-tmb-descr">
-                        <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
-                        <h3>Я уже знаю Python</h3>
-                        <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код.</p>
-                      </div>
-                      <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
-                    </div></a></div>
-                <div class="slide"><a class="blog-tmb" href="#">
-                    <div class="row">
-                      <div class="blog-tmb-descr">
-                        <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
-                        <h3>Я уже знаю Python. Будет ли мне полезен курс?</h3>
-                        <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
-                      </div>
-                      <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
-                    </div></a></div>
-                <div class="slide"><a class="blog-tmb" href="#">
-                    <div class="row">
-                      <div class="blog-tmb-descr">
-                        <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
-                        <h3>Я уже знаю Python</h3>
-                        <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код.</p>
-                      </div>
-                      <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
-                    </div></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Читайте также END-->
-    </main>
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="row">
-            <div class="col footer-col-1">
-              <div class="footer-logo"><a href="#"><img src="images/footer-logo.svg" alt="Pumpskill"></a></div>
-              <div class="footer-copy">
-                <p>© 2020 PumpSkill</p>
-              </div>
-              <div class="footer-agree">
-                <p><a href="#">Пользовательское соглашение</a></p>
-              </div>
-              <div class="footer-dev-over-wrapper">
-                <div class="cont">
-                  <div class="footer-dev-wrapper"><a class="footer-dev" href="#">Made&nbsp;by <span>PARADIGMA</span></a></div>
-                  <div class="footer-art-direction">
-                    <p>Art direction by&nbsp;<a href="#">Gromadin</a></p>
+                  <div class="col header-col-5">
+                    <div class="header-login"><a class="btn btn-login" href="#" data-toggle="modal" data-target="#loginModal"><span>Вход</span></a></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col footer-col-2">
-              <div class="footer-ttl">Pumpskill</div>
-              <ul class="footer-menu">
-                <li><a href="#">О&nbsp;школе</a></li>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- Article header-->
+        <div class="section section-page-header section-article-header">
+          <div class="container">
+            <div class="section-content">
+              <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
                 <li><a href="#">Блог</a></li>
-                <li><a href="#">Выбрать профессию</a></li>
+                <li><span>Я уже знаю Python. Будет ли мне полезен курс?</span></li>
               </ul>
+              <h1>Я уже знаю Python. Будет ли мне полезен курс?</h1>
+              <div class="article-date">12 февраля 2021 в 12:35</div>
             </div>
-            <div class="col footer-col-3">
-              <div class="footer-ttl">Контакты</div>
-              <div class="footer-contacts">
-                <div class="footer-phone">
-                  <div class="footer-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
-                  <div class="footer-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Обратный звонок</a></div>
+          </div>
+        </div>
+        <!-- Article header END-->
+        <!-- Контент статьи-->
+        <div class="article-content">
+          <div class="container">
+            <div class="article-content-inner">
+              <div class="slider-wrapper slider-countable-custom-wrapper photo-slider-wrapper">
+                <div class="photo-slider slider-countable slider-countable-custom">
+                  <div class="slide"><img src="files/article-slide-1.jpg"></div>
+                  <div class="slide"><img src="files/article-slide-2.jpg"></div>
+                  <div class="slide"><img src="files/article-slide-1.jpg"></div>
+                  <div class="slide"><img src="files/article-slide-2.jpg"></div>
                 </div>
-                <div class="footer-soclinks-wrapper">
-                  <div class="footer-soclinks"><a class="footer-soclink footer-soclink-fb" href="#"><img class="svg-inline" src="images/footer-fb.svg"></a><a class="footer-soclink footer-soclink-vk" href="#"><img class="svg-inline" src="images/footer-vk.svg"></a><a class="footer-soclink footer-soclink-twitter" href="#"><img class="svg-inline" src="images/footer-twitter.svg"></a><a class="footer-soclink footer-soclink-telegram" href="#"><img class="svg-inline" src="images/footer-telegram.svg"></a><a class="footer-soclink footer-soclink-whatsapp" href="#"><img class="svg-inline" src="images/footer-whatsapp.svg"></a></div>
+              </div>
+              <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
+              <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
+              <h2>Вы получите навыки</h2>
+              <ul>
+                <li>Основы html, css, js</li>
+                <li>Создавать адаптивную верстку на Bootstrap4</li>
+                <li>Писать стили на CSS и подключать их к проекту</li>
+                <li>Писать JS скрипты</li>
+              </ul>
+              <h3>Вы получите навыки</h3>
+              <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
+              <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
+              <div class="article-pic"><img src="files/article-pic.jpg"></div>
+              <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Контент статьи END-->
+        <!-- Читайте также-->
+        <div class="section section-blog-more">
+          <div class="container">
+            <div class="section-content">
+              <div class="section-header">
+                <h2>Читайте также</h2>
+              </div>
+              <div class="slider-wrapper slider-countable-custom-wrapper blog-slider-wrapper">
+                <div class="blog-slider slider-countable slider-countable-custom">
+                  <div class="slide"><a class="blog-tmb" href="#">
+                      <div class="row">
+                        <div class="blog-tmb-descr">
+                          <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
+                          <h3>Я уже знаю Python. Будет ли мне полезен курс?</h3>
+                          <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
+                        </div>
+                        <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
+                      </div></a></div>
+                  <div class="slide"><a class="blog-tmb" href="#">
+                      <div class="row">
+                        <div class="blog-tmb-descr">
+                          <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
+                          <h3>Я уже знаю Python</h3>
+                          <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код.</p>
+                        </div>
+                        <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
+                      </div></a></div>
+                  <div class="slide"><a class="blog-tmb" href="#">
+                      <div class="row">
+                        <div class="blog-tmb-descr">
+                          <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
+                          <h3>Я уже знаю Python. Будет ли мне полезен курс?</h3>
+                          <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
+                        </div>
+                        <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
+                      </div></a></div>
+                  <div class="slide"><a class="blog-tmb" href="#">
+                      <div class="row">
+                        <div class="blog-tmb-descr">
+                          <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
+                          <h3>Я уже знаю Python</h3>
+                          <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код.</p>
+                        </div>
+                        <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
+                      </div></a></div>
+                  <div class="slide"><a class="blog-tmb" href="#">
+                      <div class="row">
+                        <div class="blog-tmb-descr">
+                          <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
+                          <h3>Я уже знаю Python. Будет ли мне полезен курс?</h3>
+                          <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний.</p>
+                        </div>
+                        <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
+                      </div></a></div>
+                  <div class="slide"><a class="blog-tmb" href="#">
+                      <div class="row">
+                        <div class="blog-tmb-descr">
+                          <div class="blog-tmb-date">12 февраля 2021 в 12:35</div>
+                          <h3>Я уже знаю Python</h3>
+                          <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код.</p>
+                        </div>
+                        <div class="blog-tmb-pic"><img src="files/blog-tmb.jpg"></div>
+                      </div></a></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <div class="modal fade form-modal" id="consultModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="order-form-wrapper">
-            <div class="section-header">
-              <h2>Получи полную программу и&nbsp;консультацию</h2>
-            </div>
+        <!-- Читайте также END-->
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer-content">
             <div class="row">
-              <div class="col order-col-1">
-                <div class="order-form">
-                  <form>
-                    <input type="hidden" name="program_modal_course" id="program_modal_course">
-                    <div class="row">
-                      <div class="col col-12">
-                        <div class="form-group">
-                          <label class="placeholder" for="program_modal_name">Ваше имя</label>
-                          <input type="text" name="program_modal_name" id="program_modal_name" required>
-                        </div>
-                      </div>
-                      <div class="col col-order-phone">
-                        <div class="form-group">
-                          <label class="placeholder" for="program_modal_phone">Телефон</label>
-                          <input class="input-phone phone-email-group" type="text" name="program_modal_phone" id="program_modal_phone">
-                        </div>
-                      </div>
-                      <div class="col col-order-or">
-                        <p>или</p>
-                      </div>
-                      <div class="col col-order-email">
-                        <div class="form-group">
-                          <label class="placeholder" for="program_modal_email">E-mail</label>
-                          <input class="phone-email-group" type="email" name="program_modal_email" id="program_modal_email">
-                        </div>
-                      </div>
+              <div class="col footer-col-1">
+                <div class="footer-logo"><a href="#"><img src="images/footer-logo.svg" alt="Pumpskill"></a></div>
+                <div class="footer-copy">
+                  <p>© 2020 PumpSkill</p>
+                </div>
+                <div class="footer-agree">
+                  <p><a href="#">Пользовательское соглашение</a></p>
+                </div>
+                <div class="footer-dev-over-wrapper">
+                  <div class="cont">
+                    <div class="footer-dev-wrapper"><a class="footer-dev" href="#">Made&nbsp;by <span>PARADIGMA</span></a></div>
+                    <div class="footer-art-direction">
+                      <p>Art direction by&nbsp;<a href="#">Gromadin</a></p>
                     </div>
-                    <div class="form-footer">
-                      <input class="btn btn-2" type="submit" value="Оформить заказ">
-                    </div>
-                    <div class="form-agree">
-                      <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
-                    </div>
-                  </form>
+                  </div>
                 </div>
               </div>
-              <div class="col order-col-2">
-                <div class="order-descr">
-                  <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы.</p>
-                  <div class="order-soclinks-wrapper">
-                    <div class="order-soclinks-ttl">
-                      <p>Или пишите нам:</p>
-                    </div>
-                    <div class="order-soclinks">
-                      <div class="soclinks"><a class="soclink soclink-whatsapp" href="#"></a><a class="soclink soclink-telegram" href="#"></a></div>
-                    </div>
+              <div class="col footer-col-2">
+                <div class="footer-ttl">Pumpskill</div>
+                <ul class="footer-menu">
+                  <li><a href="#">О&nbsp;школе</a></li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Выбрать профессию</a></li>
+                </ul>
+              </div>
+              <div class="col footer-col-3">
+                <div class="footer-ttl">Контакты</div>
+                <div class="footer-contacts">
+                  <div class="footer-phone">
+                    <div class="footer-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
+                    <div class="footer-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Обратный звонок</a></div>
+                  </div>
+                  <div class="footer-soclinks-wrapper">
+                    <div class="footer-soclinks"><a class="footer-soclink footer-soclink-fb" href="#"><img class="svg-inline" src="images/footer-fb.svg"></a><a class="footer-soclink footer-soclink-vk" href="#"><img class="svg-inline" src="images/footer-vk.svg"></a><a class="footer-soclink footer-soclink-twitter" href="#"><img class="svg-inline" src="images/footer-twitter.svg"></a><a class="footer-soclink footer-soclink-telegram" href="#"><img class="svg-inline" src="images/footer-telegram.svg"></a><a class="footer-soclink footer-soclink-whatsapp" href="#"><img class="svg-inline" src="images/footer-whatsapp.svg"></a></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="modal fade form-modal" id="orderModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="order-form-wrapper">
-            <div class="section-header">
-              <h2>Запишись сейчас и получи скидку на курс 40%</h2>
-            </div>
-            <div class="row">
-              <div class="col order-col-1">
-                <div class="order-form">
-                  <form>
-                    <div class="row">
-                      <div class="col col-12">
-                        <div class="form-group">
-                          <label class="placeholder" for="order_modal_name">Ваше имя</label>
-                          <input type="text" name="order_modal_name" id="order_modal_name" required>
-                        </div>
-                      </div>
-                      <div class="col col-order-phone">
-                        <div class="form-group">
-                          <label class="placeholder" for="order_modal_phone">Телефон</label>
-                          <input class="input-phone phone-email-group" type="text" name="order_modal_phone" id="order_modal_phone">
-                        </div>
-                      </div>
-                      <div class="col col-order-or">
-                        <p>или</p>
-                      </div>
-                      <div class="col col-order-email">
-                        <div class="form-group">
-                          <label class="placeholder" for="order_modal_email">E-mail</label>
-                          <input class="phone-email-group" type="email" name="order_modal_email" id="order_modal_email">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-footer">
-                      <input class="btn btn-2" type="submit" value="Оформить заказ">
-                    </div>
-                    <div class="form-agree">
-                      <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
-                    </div>
-                  </form>
-                </div>
+      </footer>
+      <div class="modal fade form-modal" id="consultModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="order-form-wrapper">
+              <div class="section-header">
+                <h2>Получи полную программу и&nbsp;консультацию</h2>
               </div>
-              <div class="col order-col-2">
-                <div class="order-descr">
-                  <div class="info-list info-list-alt">
-                    <div class="info-tmb">
-                      <div class="info-tmb-ttl">Старт курса:</div>
-                      <div class="info-tmb-text">15 ноября</div>
-                    </div>
-                    <div class="info-tmb">
-                      <div class="info-tmb-ttl">Осталось:</div>
-                      <div class="info-tmb-text">3 места</div>
-                    </div>
-                    <div class="info-tmb info-tmb-price">
-                      <div class="info-tmb-ttl">Стоимость курса:</div>
-                      <div class="info-tmb-text">25 500 ₽</div>
+              <div class="row">
+                <div class="col order-col-1">
+                  <div class="order-form">
+                    <form>
+                      <input type="hidden" name="program_modal_course" id="program_modal_course">
+                      <div class="row">
+                        <div class="col col-12">
+                          <div class="form-group">
+                            <label class="placeholder" for="program_modal_name">Ваше имя</label>
+                            <input type="text" name="program_modal_name" id="program_modal_name" required>
+                          </div>
+                        </div>
+                        <div class="col col-order-phone">
+                          <div class="form-group">
+                            <label class="placeholder" for="program_modal_phone">Телефон</label>
+                            <input class="input-phone phone-email-group" type="text" name="program_modal_phone" id="program_modal_phone">
+                          </div>
+                        </div>
+                        <div class="col col-order-or">
+                          <p>или</p>
+                        </div>
+                        <div class="col col-order-email">
+                          <div class="form-group">
+                            <label class="placeholder" for="program_modal_email">E-mail</label>
+                            <input class="phone-email-group" type="email" name="program_modal_email" id="program_modal_email">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-footer">
+                        <input class="btn btn-2" type="submit" value="Оформить заказ">
+                      </div>
+                      <div class="form-agree">
+                        <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col order-col-2">
+                  <div class="order-descr">
+                    <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы.</p>
+                    <div class="order-soclinks-wrapper">
+                      <div class="order-soclinks-ttl">
+                        <p>Или пишите нам:</p>
+                      </div>
+                      <div class="order-soclinks">
+                        <div class="soclinks"><a class="soclink soclink-whatsapp" href="#"></a><a class="soclink soclink-telegram" href="#"></a></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -356,196 +290,263 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade small-modal" id="callbackModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="modal-header">
-            <h2>Поможем в выборе</h2>
-          </div>
-          <div class="modal-body">
-            <div class="modal-text">
-              <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы</p>
-            </div>
-            <div class="modal-form">
-              <form>
-                <div class="form-group">
-                  <label class="placeholder" for="callback_phone">Телефон</label>
-                  <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
-                </div>
-                <div class="form-footer">
-                  <input class="btn btn-2" type="submit" value="Отправить">
-                </div>
-                <div class="form-agree">
-                  <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="reviewModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="ajax-modal-content"></div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade login-modal" id="loginModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="modal-header">
-            <h2>Вход</h2>
-          </div>
-          <div class="modal-body">
-            <h5>Войти с помощью</h5>
-            <div class="login-extrenal"><a class="login-extrenal-item" href="#"><img src="images/ico-gmail.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-facebook.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-vk.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-github.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-mailru.png"></a></div>
-            <h5>Войти по e-mail</h5>
-            <div class="modal-form login-form">
-              <form>
-                <div class="row">
-                  <div class="col col-12 col-login-narrow">
-                    <div class="form-group">
-                      <label class="placeholder" for="email_email">E-mail</label>
-                      <input type="email" name="email_email" id="email_email" required>
-                    </div>
+      <div class="modal fade form-modal" id="orderModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="order-form-wrapper">
+              <div class="section-header">
+                <h2>Запишись сейчас и получи скидку на курс 40%</h2>
+              </div>
+              <div class="row">
+                <div class="col order-col-1">
+                  <div class="order-form">
+                    <form>
+                      <div class="row">
+                        <div class="col col-12">
+                          <div class="form-group">
+                            <label class="placeholder" for="order_modal_name">Ваше имя</label>
+                            <input type="text" name="order_modal_name" id="order_modal_name" required>
+                          </div>
+                        </div>
+                        <div class="col col-order-phone">
+                          <div class="form-group">
+                            <label class="placeholder" for="order_modal_phone">Телефон</label>
+                            <input class="input-phone phone-email-group" type="text" name="order_modal_phone" id="order_modal_phone">
+                          </div>
+                        </div>
+                        <div class="col col-order-or">
+                          <p>или</p>
+                        </div>
+                        <div class="col col-order-email">
+                          <div class="form-group">
+                            <label class="placeholder" for="order_modal_email">E-mail</label>
+                            <input class="phone-email-group" type="email" name="order_modal_email" id="order_modal_email">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-footer">
+                        <input class="btn btn-2" type="submit" value="Оформить заказ">
+                      </div>
+                      <div class="form-agree">
+                        <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                      </div>
+                    </form>
                   </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-group">
-                      <label class="placeholder" for="email_password">Пароль</label>
-                      <input class="password" type="password" name="email_password" id="email_password" required>
-                    </div>
-                  </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-checkboxes">
-                      <div class="form-checkbox">
-                        <input type="checkbox" name="login_remember" id="login_remember">
-                        <label for="login_remember">Запомнить меня</label>
+                </div>
+                <div class="col order-col-2">
+                  <div class="order-descr">
+                    <div class="info-list info-list-alt">
+                      <div class="info-tmb">
+                        <div class="info-tmb-ttl">Старт курса:</div>
+                        <div class="info-tmb-text">15 ноября</div>
+                      </div>
+                      <div class="info-tmb">
+                        <div class="info-tmb-ttl">Осталось:</div>
+                        <div class="info-tmb-text">3 места</div>
+                      </div>
+                      <div class="info-tmb info-tmb-price">
+                        <div class="info-tmb-ttl">Стоимость курса:</div>
+                        <div class="info-tmb-text">25 500 ₽</div>
                       </div>
                     </div>
                   </div>
-                  <div class="col col-login-narrow">
-                    <div class="forgot-link-wrapper"><a href="#">Забыли пароль?</a></div>
-                  </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-footer">
-                      <input class="btn btn-3" type="submit" value="Войти">
-                    </div>
-                  </div>
                 </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <h3>Вы у нас впервые?</h3>
-              <div class="modal-register-button-wrapper"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#registerModal">Зарегистрироваться</a></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade login-modal" id="registerModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="modal-header">
-            <h2>Регистрация</h2>
-          </div>
-          <div class="modal-body">
-            <div class="modal-form login-form">
-              <form>
-                <div class="row">
-                  <div class="col col-12">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_name">Ваше имя</label>
-                      <input type="text" name="register_name" id="register_name" required>
-                    </div>
+      <div class="modal fade small-modal" id="callbackModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <h2>Поможем в выборе</h2>
+            </div>
+            <div class="modal-body">
+              <div class="modal-text">
+                <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы</p>
+              </div>
+              <div class="modal-form">
+                <form>
+                  <div class="form-group">
+                    <label class="placeholder" for="callback_phone">Телефон</label>
+                    <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
                   </div>
-                  <div class="col col-12">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_lastname">Ваша фамилия</label>
-                      <input type="text" name="register_lastname" id="register_lastname" required>
-                    </div>
+                  <div class="form-footer">
+                    <input class="btn btn-2" type="submit" value="Отправить">
                   </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_phone">Телефон</label>
-                      <input class="input-phone" type="text" name="register_phone" id="register_phone" required>
-                    </div>
+                  <div class="form-agree">
+                    <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
                   </div>
-                  <div class="col col-12">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_email">E-mail</label>
-                      <input type="email" name="register_email" id="register_email" required>
-                    </div>
-                  </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_password">Пароль</label>
-                      <input class="password" type="password" name="register_password" id="register_password" required>
-                    </div>
-                  </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_password_repeat">Повторите пароль</label>
-                      <input class="password-repeat" type="password" name="register_password_repeat" id="register_password_repeat" required>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-footer">
-                  <input class="btn btn-2" type="submit" value="Зарегистрироваться">
-                </div>
-                <div class="form-agree">
-                  <p>Нажимая кнопку «Зарегистрироваться» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade small-modal" id="successModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="modal-body">
-            <div class="success-modal-ttl">
-              <p>Заявка отправлена</p>
+      <div class="modal fade" id="reviewModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="ajax-modal-content"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade login-modal" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <h2>Вход</h2>
             </div>
-            <div class="success-modal-text">
-              <p>Ожидайте звонка менеджера или письма на почту</p>
-            </div>
-            <div class="success-modal-button">
-              <button class="btn btn-3" type="button" data-dismiss="modal" aria-label="Close">Понятно</button>
+            <div class="modal-body">
+              <h5>Войти с помощью</h5>
+              <div class="login-extrenal"><a class="login-extrenal-item" href="#"><img src="images/ico-gmail.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-facebook.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-vk.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-github.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-mailru.png"></a></div>
+              <h5>Войти по e-mail</h5>
+              <div class="modal-form login-form">
+                <form>
+                  <div class="row">
+                    <div class="col col-12 col-login-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="email_email">E-mail</label>
+                        <input type="email" name="email_email" id="email_email" required>
+                      </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="email_password">Пароль</label>
+                        <input class="password" type="password" name="email_password" id="email_password" required>
+                      </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-checkboxes">
+                        <div class="form-checkbox">
+                          <input type="checkbox" name="login_remember" id="login_remember">
+                          <label for="login_remember">Запомнить меня</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="forgot-link-wrapper"><a href="#">Забыли пароль?</a></div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-footer">
+                        <input class="btn btn-3" type="submit" value="Войти">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <h3>Вы у нас впервые?</h3>
+                <div class="modal-register-button-wrapper"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#registerModal">Зарегистрироваться</a></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="modal fade login-modal" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <h2>Регистрация</h2>
+            </div>
+            <div class="modal-body">
+              <div class="modal-form login-form">
+                <form>
+                  <div class="row">
+                    <div class="col col-12">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_name">Ваше имя</label>
+                        <input type="text" name="register_name" id="register_name" required>
+                      </div>
+                    </div>
+                    <div class="col col-12">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_lastname">Ваша фамилия</label>
+                        <input type="text" name="register_lastname" id="register_lastname" required>
+                      </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_phone">Телефон</label>
+                        <input class="input-phone" type="text" name="register_phone" id="register_phone" required>
+                      </div>
+                    </div>
+                    <div class="col col-12">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_email">E-mail</label>
+                        <input type="email" name="register_email" id="register_email" required>
+                      </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_password">Пароль</label>
+                        <input class="password" type="password" name="register_password" id="register_password" required>
+                      </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_password_repeat">Повторите пароль</label>
+                        <input class="password-repeat" type="password" name="register_password_repeat" id="register_password_repeat" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <input class="btn btn-2" type="submit" value="Зарегистрироваться">
+                  </div>
+                  <div class="form-agree">
+                    <p>Нажимая кнопку «Зарегистрироваться» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade small-modal" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+              <div class="success-modal-ttl">
+                <p>Заявка отправлена</p>
+              </div>
+              <div class="success-modal-text">
+                <p>Ожидайте звонка менеджера или письма на почту</p>
+              </div>
+              <div class="success-modal-button">
+                <button class="btn btn-3" type="button" data-dismiss="modal" aria-label="Close">Понятно</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/jquery.mobile.custom.min.js"></script>
+      <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wNumb.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/fancybox/jquery.fancybox.min.js"></script>
+      <script src="js/greensock/TweenMax.min.js"></script>
+      <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+      <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+      <script src="js/iscroll-probe.js"></script>
+      <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+      <script src="js/jquery.mousewheel.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+      <script src="js/nouislider.js"></script><script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/animations.js"></script>
     </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.mobile.custom.min.js"></script>
-    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/additional-methods.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/wNumb.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/fancybox/jquery.fancybox.min.js"></script>
-    <script src="js/greensock/TweenMax.min.js"></script>
-    <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
-    <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
-    <script src="js/iscroll-probe.js"></script>
-    <script src="js/scrollmagic/ScrollMagic.min.js"></script>
-    <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
-    <script src="js/jquery.mousewheel.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
-    <script src="js/nouislider.js"></script><script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
-  </div>
-</body>
+  </body>
+</html>

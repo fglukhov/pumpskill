@@ -1,422 +1,159 @@
 <!DOCTYPE html>
-<html lang="ru"></html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Pumpskill</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="icon-16.png" sizes="16x16" type="image/png">
-  <link rel="icon" href="icon-32.png" sizes="32x32" type="image/png">
-  <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap-select.min.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-  <link rel="stylesheet" href="css/nouislider.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <div class="over-wrapper">
-    <div id="mobile-indicator"></div>
-    <div id="md-indicator"></div>
-    <header>
-      <div class="container">
-        <div class="header-content">
-          <div class="row">
-            <div class="col header-col-1">
-              <div class="header-logo"><a href="#"><img src="images/logo.svg" alt="Pumpskill"></a></div>
-            </div>
-            <div class="col header-col-group-r">
-              <div class="row">
-                <div class="col header-col-2">
-                  <div class="navbar-trigger"><span></span><span></span><span></span></div>
-                  <div class="navbar-wrapper">
-                    <ul class="navbar-nav">
-                      <li><a href="#">О&nbsp;школе</a></li>
-                      <li><a href="#">Блог</a></li>
-                      <li><a href="#">Выбрать профессию</a></li>
-                    </ul>
-                    <div class="navbar-soclinks">
-                      <div class="header-soclinks"><a class="header-soclink header-soclink-whatsapp" href="#"></a><a class="header-soclink header-soclink-telegram" href="#"></a></div>
-                    </div>
-                    <div class="navbar-phone">
-                      <div class="header-phone">
-                        <div class="header-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
-                        <div class="header-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказ звонка</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col header-col-3">
-                  <div class="header-soclinks"><a class="header-soclink header-soclink-whatsapp" href="#"></a><a class="header-soclink header-soclink-telegram" href="#"></a></div>
-                </div>
-                <div class="col header-col-4">
-                  <div class="header-phone">
-                    <div class="header-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
-                    <div class="header-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказ звонка</a></div>
-                  </div>
-                </div>
-                <div class="col header-col-5">
-                  <div class="header-login"><a class="btn btn-login" href="#" data-toggle="modal" data-target="#loginModal"><span>Вход</span></a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <!-- About header-->
-      <div class="section section-page-header section-profession-header">
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pumpskill</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="icon-16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="icon-32.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="over-wrapper">
+      <div id="mobile-indicator"></div>
+      <div id="md-indicator"></div>
+      <header>
         <div class="container">
-          <div class="section-content">
+          <div class="header-content">
             <div class="row">
-              <div class="col page-header-col-1">
-                <div class="page-header-descr">
-                  <ul class="breadcrumb">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Профессия Python-разработчик</a></li>
-                    <li><span>Курс: название курса</span></li>
-                  </ul>
-                  <h1>Курс<br><span>название курса</span></h1>
-                  <div class="profession-lead">
-                    <p>Освойте прямо сейчас самую востребованную профессию 2021 года!</p>
-                  </div>
-                  <div class="info-list">
-                    <div class="info-tmb">
-                      <div class="info-tmb-ttl">Старт:</div>
-                      <div class="info-tmb-text">15 ноября</div>
-                    </div>
-                    <div class="info-tmb">
-                      <div class="info-tmb-ttl">Длительность:</div>
-                      <div class="info-tmb-text">1 месяц</div>
-                    </div>
-                    <div class="info-tmb">
-                      <div class="info-tmb-ttl">Уровень:</div>
-                      <div class="info-tmb-text">С нуля</div>
-                    </div>
-                  </div>
-                  <div class="profession-header-button"><a class="btn btn-2 btn-2-big" href="#" data-toggle="modal" data-target="#orderModal">Записаться на курс</a></div>
-                </div>
+              <div class="col header-col-1">
+                <div class="header-logo"><a href="#"><img src="images/logo.svg" alt="Pumpskill"></a></div>
               </div>
-              <div class="col page-header-col-2">
-                <div class="page-header-pic"><img src="files/profession-header.jpg"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- About header END-->
-      <!-- Кому подойдет-->
-      <div class="section section-who section-wide">
-        <div class="section-content">
-          <div class="section-header">
-            <div class="container">
-              <h2>Кому подойдет</h2>
-            </div>
-          </div>
-          <div class="section-body">
-            <div class="container">
-              <div class="who-list">
+              <div class="col header-col-group-r">
                 <div class="row">
-                  <div class="col">
-                    <div class="who-tmb">
-                      <div class="cont">
-                        <div class="who-tmb-pic"><img src="files/who-1-tmb.jpg" width="201"></div>
-                        <div class="who-tmb-descr">
-                          <h3>Новичкам</h3>
-                          <div class="who-tmb-text">
-                            <p>Базовый курс Python — это курс, созданный для тех, кто хочет научиться программировать на одном из самых популярных языков в мире!</p>
-                          </div>
+                  <div class="col header-col-2">
+                    <div class="navbar-trigger"><span></span><span></span><span></span></div>
+                    <div class="navbar-wrapper">
+                      <ul class="navbar-nav">
+                        <li><a href="#">О&nbsp;школе</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Выбрать профессию</a></li>
+                      </ul>
+                      <div class="navbar-soclinks">
+                        <div class="header-soclinks"><a class="header-soclink header-soclink-whatsapp" href="#"></a><a class="header-soclink header-soclink-telegram" href="#"></a></div>
+                      </div>
+                      <div class="navbar-phone">
+                        <div class="header-phone">
+                          <div class="header-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
+                          <div class="header-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказ звонка</a></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="who-tmb">
-                      <div class="cont">
-                        <div class="who-tmb-pic"><img src="files/who-2-tmb.jpg" width="201"></div>
-                        <div class="who-tmb-descr">
-                          <h3>Начинающим разрабочикам</h3>
-                          <div class="who-tmb-text">
-                            <p>Базовый курс Python — это курс, созданный для тех, кто хочет научиться программировать на одном</p>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="col header-col-3">
+                    <div class="header-soclinks"><a class="header-soclink header-soclink-whatsapp" href="#"></a><a class="header-soclink header-soclink-telegram" href="#"></a></div>
+                  </div>
+                  <div class="col header-col-4">
+                    <div class="header-phone">
+                      <div class="header-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
+                      <div class="header-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказ звонка</a></div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="who-tmb">
-                      <div class="cont">
-                        <div class="who-tmb-pic"><img src="files/who-3-tmb.jpg" width="201"></div>
-                        <div class="who-tmb-descr">
-                          <h3>Практикующим разрабочикам</h3>
-                          <div class="who-tmb-text">
-                            <p>Базовый курс Python — это курс, созданный для тех, кто хочет научиться программировать на одном из самых популярных языков в мире!</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="col header-col-5">
+                    <div class="header-login"><a class="btn btn-login" href="#" data-toggle="modal" data-target="#loginModal"><span>Вход</span></a></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Кому подойдет END-->
-      <!-- Навыки-->
-      <div class="section section-skills section-wide">
-        <div class="section-content">
-          <div class="section-header">
-            <div class="container">
-              <h2>Ваши навыки после освоения курса</h2>
-            </div>
-          </div>
-          <div class="section-body">
-            <div class="container">
-              <div class="skills-wrapper">
-                <div class="row">
-                  <div class="col skills-col-1">
-                    <div class="skills-ttl-wrapper sticky-wrapper">
-                      <div class="skills-ttl sticky-block">
-                        <p>Вы научитесь верстать сайт</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col skills-col-2">
-                    <div class="skills-list">
-                      <div class="skill-tmb">
-                        <div class="skill-tmb-line"></div>
-                        <h3>Инструменты, которые вы освоите</h3>
-                        <ul class="tools-list">
-                          <li>
-                            <div class="tool-tmb">
-                              <div class="tool-tmb-ico"><img src="files/tool-1.png" width="29"></div>
-                              <div class="tool-tmb-ttl">
-                                <p>Название инстумента</p>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="tool-tmb">
-                              <div class="tool-tmb-ico"><img src="files/tool-2.png" width="34"></div>
-                              <div class="tool-tmb-ttl">
-                                <p>Название</p>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="tool-tmb">
-                              <div class="tool-tmb-ico"><img src="files/tool-2.png" width="34"></div>
-                              <div class="tool-tmb-ttl">
-                                <p>Название</p>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="tool-tmb">
-                              <div class="tool-tmb-ico"><img src="files/tool-1.png" width="29"></div>
-                              <div class="tool-tmb-ttl">
-                                <p>Название инстумента</p>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="tool-tmb">
-                              <div class="tool-tmb-ico"><img src="files/tool-1.png" width="29"></div>
-                              <div class="tool-tmb-ttl">
-                                <p>Название инстумента</p>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="tool-tmb">
-                              <div class="tool-tmb-ico"><img src="files/tool-2.png" width="34"></div>
-                              <div class="tool-tmb-ttl">
-                                <p>Название</p>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="skill-tmb">
-                        <div class="skill-tmb-line"></div>
-                        <h3>Что ты будешь уметь</h3>
-                        <ul class="skill-ul">
-                          <li>Создавать HTML страницы</li>
-                          <li>Писать стили на CSS и подключать их к проекту</li>
-                          <li>Писать JS скрипты</li>
-                          <li>Создавать адаптивную верстку на Bootstrap4</li>
-                          <li>Поднимать сервер на Python</li>
-                          <li>Связывать front-end с back-end</li>
-                          <li>Создавать репо на GitHub и пушить в мастер</li>
-                          <li>Деплоить сайт в продакшн на heroku</li>
-                        </ul>
-                      </div>
-                      <div class="skill-tmb">
-                        <div class="skill-tmb-line"></div>
-                        <h3>GitHub</h3>
-                        <p>GitHub — веб-сервис для совместной работы разработчиков над кодом и хостинга проектов. GitHub основан на системе контроля версий GIT.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Навыки END-->
-      <!-- Программа курса-->
-      <div class="section section-program">
-        <div class="container">
-          <div class="section-content">
-            <div class="program-wrapper">
-              <div class="program-wrapper-inner">
-                <div class="section-header">
-                  <h2>Программа курса</h2>
-                  <div class="program-descr program-descr-alt">
+      </header>
+      <main>
+        <!-- About header-->
+        <div class="section section-page-header section-profession-header section-course-header">
+          <div class="container">
+            <div class="section-content">
+              <div class="row">
+                <div class="col page-header-col-1">
+                  <div class="page-header-descr">
+                    <ul class="breadcrumb">
+                      <li><a href="#">Главная</a></li>
+                      <li><a href="#">Профессия Python-разработчик</a></li>
+                      <li><span>Курс: Веб разработка на Python</span></li>
+                    </ul>
+                    <h1>Курс:<br><span>Веб разработка на&nbsp;Python</span></h1>
+                    <ul class="top-list">
+                      <li>Научитесь создавать с нуля реальные веб приложения на Python с использованием самого популярного и самого мощного фреймворка Django</li>
+                      <li>Освоите основы Linux и научитесь настраивать виртуальный выделенный сервер</li>
+                    </ul>
                     <div class="info-list">
                       <div class="info-tmb">
-                        <div class="info-tmb-ttl">Старт курса:</div>
+                        <div class="info-tmb-ttl">Старт:</div>
                         <div class="info-tmb-text">15 ноября</div>
                       </div>
                       <div class="info-tmb">
-                        <div class="info-tmb-ttl">Длительность курса:</div>
+                        <div class="info-tmb-ttl">Длительность:</div>
                         <div class="info-tmb-text">1 месяц</div>
+                      </div>
+                      <div class="info-tmb">
+                        <div class="info-tmb-ttl">Уровень:</div>
+                        <div class="info-tmb-text">С нуля</div>
+                      </div>
+                    </div>
+                    <div class="profession-header-button"><a class="btn btn-2 btn-2-big" href="#" data-toggle="modal" data-target="#orderModal">Записаться на курс</a></div>
+                  </div>
+                </div>
+                <div class="col page-header-col-2">
+                  <div class="sticky-wrapper">
+                    <div class="sticky-block"><a class="video" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-fancybox><img src="files/video-poster.jpg">
+                        <div class="play-button"></div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- About header END-->
+        <!-- Кому подойдет-->
+        <div class="section section-who section-wide">
+          <div class="section-content">
+            <div class="section-header">
+              <div class="container">
+                <h2>Кому подойдет</h2>
+              </div>
+            </div>
+            <div class="section-body">
+              <div class="container">
+                <div class="who-list">
+                  <div class="who-tmb">
+                    <div class="cont">
+                      <div class="who-tmb-pic"><img src="images/who-1-tmb.svg"></div>
+                      <div class="who-tmb-descr">
+                        <h3>Новичкам</h3>
+                        <div class="who-tmb-text">
+                          <p>Вас будет консультировать опытный преподаватель. Обучение начнется с самых азов и будет много практики. Чтобы учиться никаких знаний в программировании не нужно.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="program-list">
-                  <div class="program-item">
-                    <div class="program-item-ttl">
-                      <div class="program-item-arrow"></div>
-                      <h3>Основы языка программирования Python</h3>
-                    </div>
-                    <div class="program-item-content">
-                      <ul class="program-ul">
-                        <li>Фреймворк Flask;</li>
-                        <li>Обработка POST и GET запросов;</li>
-                        <li>Создание и запуск сервера на Python с помощью Flask;</li>
-                        <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
-                        <li>HTML объект <form> для отправки POST запросов;</li>
-                        <li>Шаблоны Jinja.</li>
-                      </ul>
+                  <div class="who-tmb">
+                    <div class="cont">
+                      <div class="who-tmb-pic"><img src="images/who-2-tmb.svg"></div>
+                      <div class="who-tmb-descr">
+                        <h3>IT специалистам</h3>
+                        <div class="who-tmb-text">
+                          <p>Вы узнаете Best Practice программирования на Python. Научитесь создавать веб-приложения с front-end и back-end частями и базами данных и публиковать их в интернете.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="program-item">
-                    <div class="program-item-ttl">
-                      <div class="program-item-arrow"></div>
-                      <h3>Git — система контроля версий <span class="program-tag">Курсовой проект</span></h3>
-                    </div>
-                    <div class="program-item-content">
-                      <ul class="program-ul">
-                        <li>Фреймворк Flask;</li>
-                        <li>Обработка POST и GET запросов;</li>
-                        <li>Создание и запуск сервера на Python с помощью Flask;</li>
-                        <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
-                        <li>HTML объект <form> для отправки POST запросов;</li>
-                        <li>Шаблоны Jinja.</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="program-item">
-                    <div class="program-item-ttl">
-                      <div class="program-item-arrow"></div>
-                      <h3>Облачный архиватор</h3>
-                    </div>
-                    <div class="program-item-content">
-                      <ul class="program-ul">
-                        <li>Фреймворк Flask;</li>
-                        <li>Обработка POST и GET запросов;</li>
-                        <li>Создание и запуск сервера на Python с помощью Flask;</li>
-                        <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
-                        <li>HTML объект <form> для отправки POST запросов;</li>
-                        <li>Шаблоны Jinja.</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="program-item">
-                    <div class="program-item-ttl">
-                      <div class="program-item-arrow"></div>
-                      <h3>Английский язык для начинающих разработчиков <span class="program-tag">EnglishDom</span></h3>
-                    </div>
-                    <div class="program-item-content">
-                      <ul class="program-ul">
-                        <li>Фреймворк Flask;</li>
-                        <li>Обработка POST и GET запросов;</li>
-                        <li>Создание и запуск сервера на Python с помощью Flask;</li>
-                        <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
-                        <li>HTML объект <form> для отправки POST запросов;</li>
-                        <li>Шаблоны Jinja.</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="program-item">
-                    <div class="program-item-ttl">
-                      <div class="program-item-arrow"></div>
-                      <h3>Базы данных</h3>
-                    </div>
-                    <div class="program-item-content">
-                      <ul class="program-ul">
-                        <li>Фреймворк Flask;</li>
-                        <li>Обработка POST и GET запросов;</li>
-                        <li>Создание и запуск сервера на Python с помощью Flask;</li>
-                        <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
-                        <li>HTML объект <form> для отправки POST запросов;</li>
-                        <li>Шаблоны Jinja.</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="program-item">
-                    <div class="program-item-ttl">
-                      <div class="program-item-arrow"></div>
-                      <h3>Профессиональная работа с Python <span class="program-tag">Курсовой проект</span></h3>
-                    </div>
-                    <div class="program-item-content">
-                      <ul class="program-ul">
-                        <li>Фреймворк Flask;</li>
-                        <li>Обработка POST и GET запросов;</li>
-                        <li>Создание и запуск сервера на Python с помощью Flask;</li>
-                        <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
-                        <li>HTML объект <form> для отправки POST запросов;</li>
-                        <li>Шаблоны Jinja.</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="program-item">
-                    <div class="program-item-ttl">
-                      <div class="program-item-arrow"></div>
-                      <h3>Модули, пакеты и работа с файлами</h3>
-                    </div>
-                    <div class="program-item-content">
-                      <ul class="program-ul">
-                        <li>Фреймворк Flask;</li>
-                        <li>Обработка POST и GET запросов;</li>
-                        <li>Создание и запуск сервера на Python с помощью Flask;</li>
-                        <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
-                        <li>HTML объект <form> для отправки POST запросов;</li>
-                        <li>Шаблоны Jinja.</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="program-item">
-                    <div class="program-item-ttl">
-                      <div class="program-item-arrow"></div>
-                      <h3>Python для веб разработки</h3>
-                    </div>
-                    <div class="program-item-content">
-                      <ul class="program-ul">
-                        <li>Фреймворк Flask;</li>
-                        <li>Обработка POST и GET запросов;</li>
-                        <li>Создание и запуск сервера на Python с помощью Flask;</li>
-                        <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
-                        <li>HTML объект <form> для отправки POST запросов;</li>
-                        <li>Шаблоны Jinja.</li>
-                      </ul>
+                  <div class="who-tmb">
+                    <div class="cont">
+                      <div class="who-tmb-pic"><img src="images/who-3-tmb.svg"></div>
+                      <div class="who-tmb-descr">
+                        <h3>Желающим сменить профессию</h3>
+                        <div class="who-tmb-text">
+                          <p>Если вы задумались о смене профессии, то Python - это хороший выбор. Пройдя курс, вы сможете программировать на Python и сделаете свой первый шаг к освоению новой специальности.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -424,12 +161,1182 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Программа курса END-->
-      <!-- Получи программу-->
-      <div class="section section-with-bg section-order">
-        <div class="container">
+        <!-- Кому подойдет END-->
+        <!-- Навыки-->
+        <div class="section section-skills section-wide">
           <div class="section-content">
+            <div class="section-header">
+              <div class="container">
+                <h2>Ваши навыки после освоения курса</h2>
+              </div>
+            </div>
+            <div class="section-body">
+              <div class="container">
+                <div class="skills-wrapper">
+                  <div class="row">
+                    <div class="col skills-col-1">
+                      <div class="skills-ttl-wrapper sticky-wrapper">
+                        <div class="skills-ttl sticky-block">
+                          <p>Вы научитесь верстать сайт</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col skills-col-2">
+                      <div class="skills-list">
+                        <div class="skill-tmb">
+                          <div class="skill-tmb-line"></div>
+                          <h3>Инструменты, которые вы освоите</h3>
+                          <ul class="tools-list">
+                            <li>
+                              <div class="tool-tmb">
+                                <div class="tool-tmb-ico"><img src="files/tool-1.png" width="29"></div>
+                                <div class="tool-tmb-ttl">
+                                  <p>Название инстумента</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="tool-tmb">
+                                <div class="tool-tmb-ico"><img src="files/tool-2.png" width="34"></div>
+                                <div class="tool-tmb-ttl">
+                                  <p>Название</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="tool-tmb">
+                                <div class="tool-tmb-ico"><img src="files/tool-2.png" width="34"></div>
+                                <div class="tool-tmb-ttl">
+                                  <p>Название</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="tool-tmb">
+                                <div class="tool-tmb-ico"><img src="files/tool-1.png" width="29"></div>
+                                <div class="tool-tmb-ttl">
+                                  <p>Название инстумента</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="tool-tmb">
+                                <div class="tool-tmb-ico"><img src="files/tool-1.png" width="29"></div>
+                                <div class="tool-tmb-ttl">
+                                  <p>Название инстумента</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="tool-tmb">
+                                <div class="tool-tmb-ico"><img src="files/tool-2.png" width="34"></div>
+                                <div class="tool-tmb-ttl">
+                                  <p>Название</p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="skill-tmb">
+                          <div class="skill-tmb-line"></div>
+                          <h3>Что ты будешь уметь</h3>
+                          <ul class="skill-ul">
+                            <li>Создавать HTML страницы</li>
+                            <li>Писать стили на CSS и подключать их к проекту</li>
+                            <li>Писать JS скрипты</li>
+                            <li>Создавать адаптивную верстку на Bootstrap4</li>
+                            <li>Поднимать сервер на Python</li>
+                            <li>Связывать front-end с back-end</li>
+                            <li>Создавать репо на GitHub и пушить в мастер</li>
+                            <li>Деплоить сайт в продакшн на heroku</li>
+                          </ul>
+                        </div>
+                        <div class="skill-tmb">
+                          <div class="skill-tmb-line"></div>
+                          <h3>GitHub</h3>
+                          <p>GitHub — веб-сервис для совместной работы разработчиков над кодом и хостинга проектов. GitHub основан на системе контроля версий GIT.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Навыки END-->
+        <!-- Программа курса-->
+        <div class="section section-program">
+          <div class="container">
+            <div class="section-content">
+              <div class="program-wrapper">
+                <div class="program-wrapper-inner">
+                  <div class="section-header">
+                    <h2>Программа курса</h2>
+                    <div class="program-descr program-descr-alt">
+                      <div class="info-list">
+                        <div class="info-tmb">
+                          <div class="info-tmb-ttl">Старт курса:</div>
+                          <div class="info-tmb-text">15 ноября</div>
+                        </div>
+                        <div class="info-tmb">
+                          <div class="info-tmb-ttl">Длительность курса:</div>
+                          <div class="info-tmb-text">1 месяц</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="program-list">
+                    <div class="program-item">
+                      <div class="program-item-ttl">
+                        <div class="program-item-arrow"></div>
+                        <h3>Основы языка программирования Python</h3>
+                      </div>
+                      <div class="program-item-content">
+                        <ul class="program-ul">
+                          <li>Фреймворк Flask;</li>
+                          <li>Обработка POST и GET запросов;</li>
+                          <li>Создание и запуск сервера на Python с помощью Flask;</li>
+                          <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
+                          <li>HTML объект <form> для отправки POST запросов;</li>
+                          <li>Шаблоны Jinja.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="program-item">
+                      <div class="program-item-ttl">
+                        <div class="program-item-arrow"></div>
+                        <h3>Git — система контроля версий <span class="program-tag">Курсовой проект</span></h3>
+                      </div>
+                      <div class="program-item-content">
+                        <ul class="program-ul">
+                          <li>Фреймворк Flask;</li>
+                          <li>Обработка POST и GET запросов;</li>
+                          <li>Создание и запуск сервера на Python с помощью Flask;</li>
+                          <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
+                          <li>HTML объект <form> для отправки POST запросов;</li>
+                          <li>Шаблоны Jinja.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="program-item">
+                      <div class="program-item-ttl">
+                        <div class="program-item-arrow"></div>
+                        <h3>Облачный архиватор</h3>
+                      </div>
+                      <div class="program-item-content">
+                        <ul class="program-ul">
+                          <li>Фреймворк Flask;</li>
+                          <li>Обработка POST и GET запросов;</li>
+                          <li>Создание и запуск сервера на Python с помощью Flask;</li>
+                          <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
+                          <li>HTML объект <form> для отправки POST запросов;</li>
+                          <li>Шаблоны Jinja.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="program-item">
+                      <div class="program-item-ttl">
+                        <div class="program-item-arrow"></div>
+                        <h3>Английский язык для начинающих разработчиков <span class="program-tag">EnglishDom</span></h3>
+                      </div>
+                      <div class="program-item-content">
+                        <ul class="program-ul">
+                          <li>Фреймворк Flask;</li>
+                          <li>Обработка POST и GET запросов;</li>
+                          <li>Создание и запуск сервера на Python с помощью Flask;</li>
+                          <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
+                          <li>HTML объект <form> для отправки POST запросов;</li>
+                          <li>Шаблоны Jinja.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="program-item">
+                      <div class="program-item-ttl">
+                        <div class="program-item-arrow"></div>
+                        <h3>Базы данных</h3>
+                      </div>
+                      <div class="program-item-content">
+                        <ul class="program-ul">
+                          <li>Фреймворк Flask;</li>
+                          <li>Обработка POST и GET запросов;</li>
+                          <li>Создание и запуск сервера на Python с помощью Flask;</li>
+                          <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
+                          <li>HTML объект <form> для отправки POST запросов;</li>
+                          <li>Шаблоны Jinja.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="program-item">
+                      <div class="program-item-ttl">
+                        <div class="program-item-arrow"></div>
+                        <h3>Профессиональная работа с Python <span class="program-tag">Курсовой проект</span></h3>
+                      </div>
+                      <div class="program-item-content">
+                        <ul class="program-ul">
+                          <li>Фреймворк Flask;</li>
+                          <li>Обработка POST и GET запросов;</li>
+                          <li>Создание и запуск сервера на Python с помощью Flask;</li>
+                          <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
+                          <li>HTML объект <form> для отправки POST запросов;</li>
+                          <li>Шаблоны Jinja.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="program-item">
+                      <div class="program-item-ttl">
+                        <div class="program-item-arrow"></div>
+                        <h3>Модули, пакеты и работа с файлами</h3>
+                      </div>
+                      <div class="program-item-content">
+                        <ul class="program-ul">
+                          <li>Фреймворк Flask;</li>
+                          <li>Обработка POST и GET запросов;</li>
+                          <li>Создание и запуск сервера на Python с помощью Flask;</li>
+                          <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
+                          <li>HTML объект <form> для отправки POST запросов;</li>
+                          <li>Шаблоны Jinja.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="program-item">
+                      <div class="program-item-ttl">
+                        <div class="program-item-arrow"></div>
+                        <h3>Python для веб разработки</h3>
+                      </div>
+                      <div class="program-item-content">
+                        <ul class="program-ul">
+                          <li>Фреймворк Flask;</li>
+                          <li>Обработка POST и GET запросов;</li>
+                          <li>Создание и запуск сервера на Python с помощью Flask;</li>
+                          <li>Базы данных и библиотека Sqlalchemy для работы с БД;</li>
+                          <li>HTML объект <form> для отправки POST запросов;</li>
+                          <li>Шаблоны Jinja.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Программа курса END-->
+        <!-- Получи программу-->
+        <div class="section section-with-bg section-order">
+          <div class="container">
+            <div class="section-content">
+              <div class="order-form-wrapper">
+                <div class="section-header">
+                  <h2>Получи полную программу и&nbsp;консультацию</h2>
+                </div>
+                <div class="row">
+                  <div class="col order-col-1">
+                    <div class="order-form">
+                      <form>
+                        <div class="row">
+                          <div class="col col-12">
+                            <div class="form-group">
+                              <label class="placeholder" for="program_name">Ваше имя</label>
+                              <input type="text" name="program_name" id="program_name" required>
+                            </div>
+                          </div>
+                          <div class="col col-order-phone">
+                            <div class="form-group">
+                              <label class="placeholder" for="program_phone">Телефон</label>
+                              <input class="input-phone phone-email-group" type="text" name="program_phone" id="program_phone">
+                            </div>
+                          </div>
+                          <div class="col col-order-or">
+                            <p>или</p>
+                          </div>
+                          <div class="col col-order-email">
+                            <div class="form-group">
+                              <label class="placeholder" for="program_email">E-mail</label>
+                              <input class="phone-email-group" type="email" name="program_email" id="program_email">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-footer">
+                          <input class="btn btn-2" type="submit" value="Оформить заказ">
+                        </div>
+                        <div class="form-agree">
+                          <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col order-col-2">
+                    <div class="order-descr">
+                      <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы.</p>
+                      <div class="order-soclinks-wrapper">
+                        <div class="order-soclinks-ttl">
+                          <p>Или пишите нам:</p>
+                        </div>
+                        <div class="order-soclinks">
+                          <div class="soclinks"><a class="soclink soclink-whatsapp" href="#"></a><a class="soclink soclink-telegram" href="#"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Получи программу END-->
+        <!-- Картинка-->
+        <div class="section section-main-pic section-main-pic-alt"><img src="files/main-pic.jpg"></div>
+        <!-- Картинка END-->
+        <!-- Как проходит обучение-->
+        <div class="section section-with-bg section-bg-white section-with-border section-how">
+          <div class="container">
+            <div class="section-content section-content-custom">
+              <div class="row custom-row">
+                <div class="col custom-col-1">
+                  <div class="custom-descr">
+                    <div class="section-header">
+                      <h2>Как проходит обучение?</h2>
+                      <div class="section-sub-header">
+                        <p>На протяжении всего обучения вас консультирует опытный преподаватель</p>
+                      </div>
+                    </div>
+                    <div class="how-list">
+                      <div class="how-tmb">
+                        <div class="how-tmb-num"></div>
+                        <div class="how-tmb-descr">
+                          <h3>Уроки и практика</h3>
+                          <p>В удобное для вас  время вы проходите уроки на нашей собственной платформе, решаете тесты  и практические задачи</p>
+                        </div>
+                      </div>
+                      <div class="how-tmb">
+                        <div class="how-tmb-num"></div>
+                        <div class="how-tmb-descr">
+                          <h3>Преподаватель и вебинары</h3>
+                          <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний</p>
+                        </div>
+                      </div>
+                      <div class="how-tmb">
+                        <div class="how-tmb-num"></div>
+                        <div class="how-tmb-descr">
+                          <h3>Домашние задания</h3>
+                          <p>Выполняете домашние задания - их лично проверяет ваш преподаватель и дает обратную связь с разбором ошибок</p>
+                        </div>
+                      </div>
+                      <div class="how-tmb">
+                        <div class="how-tmb-num"></div>
+                        <div class="how-tmb-descr">
+                          <h3>Дипломный проект</h3>
+                          <p>В конце курса выполняете дипломный проект, который сможете добавить в ваше резюме</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col custom-col-2">
+                  <div class="custom-pic">
+                    <div class="how-pics">
+                      <div class="how-pic how-pic-1">
+                        <div class="how-pic-img" style="background-image: url(files/work-1.jpg);"></div>
+                      </div>
+                      <div class="how-pic how-pic-2">
+                        <div class="how-pic-img" style="background-image: url(files/work-2.jpg);"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Как проходит обучение END-->
+        <!-- Примеры дипломных работ-->
+        <div class="section section-works-header">
+          <div class="container">
+            <div class="section-content">
+              <h2>Примеры дипломных работ</h2>
+            </div>
+          </div>
+        </div>
+        <div class="container slider-wrapper works-slider-wrapper">
+          <div class="works-slider slider-countable">
+            <div class="slide">
+              <div class="section section-with-bg section-bg-white section-with-border section-works-slide">
+                <div class="section-content section-content-custom">
+                  <div class="row custom-row">
+                    <div class="col custom-col-1">
+                      <div class="works-slide-pic">
+                        <div class="works-slide-pic-inner">
+                          <div class="cont"><img src="files/works-slide-1.jpg"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col custom-col-2">
+                      <div class="works-slide-descr">
+                        <h3>Название примера для дипломного проекта</h3>
+                        <ul>
+                          <li>Фреймворк Flask</li>
+                          <li>Обработка POST и GET запросов</li>
+                          <li>Создание и запуск сервера на Python с помощью Flask</li>
+                          <li>Базы данных и библиотека Sqlalchemy для работы с БД</li>
+                          <li>HTML объект <form> для отправки POST запросов</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="section section-with-bg section-bg-white section-with-border section-works-slide">
+                <div class="section-content section-content-custom">
+                  <div class="row custom-row">
+                    <div class="col custom-col-1">
+                      <div class="works-slide-pic">
+                        <div class="works-slide-pic-inner">
+                          <div class="cont"><img src="files/works-slide-2.jpg"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col custom-col-2">
+                      <div class="works-slide-descr">
+                        <h3>Второй проект</h3>
+                        <ul>
+                          <li>Фреймворк Flask</li>
+                          <li>Обработка POST и GET запросов</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="section section-with-bg section-bg-white section-with-border section-works-slide">
+                <div class="section-content section-content-custom">
+                  <div class="row custom-row">
+                    <div class="col custom-col-1">
+                      <div class="works-slide-pic">
+                        <div class="works-slide-pic-inner">
+                          <div class="cont"><img src="files/works-slide-1.jpg"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col custom-col-2">
+                      <div class="works-slide-descr">
+                        <h3>Название примера для дипломного проекта</h3>
+                        <ul>
+                          <li>Фреймворк Flask</li>
+                          <li>Обработка POST и GET запросов</li>
+                          <li>Создание и запуск сервера на Python с помощью Flask</li>
+                          <li>Базы данных и библиотека Sqlalchemy для работы с БД</li>
+                          <li>HTML объект <form> для отправки POST запросов</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="section section-with-bg section-bg-white section-with-border section-works-slide">
+                <div class="section-content section-content-custom">
+                  <div class="row custom-row">
+                    <div class="col custom-col-1">
+                      <div class="works-slide-pic">
+                        <div class="works-slide-pic-inner">
+                          <div class="cont"><img src="files/works-slide-2.jpg"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col custom-col-2">
+                      <div class="works-slide-descr">
+                        <h3>Второй проект</h3>
+                        <ul>
+                          <li>Фреймворк Flask</li>
+                          <li>Обработка POST и GET запросов</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Примеры дипломных работ END-->
+        <!-- Преподаватели-->
+        <div class="section section-with-bg section-bg-white section-with-border section-teachers">
+          <div class="container">
+            <div class="section-content section-content-custom">
+              <div class="section-teachers-top">
+                <div class="row custom-row">
+                  <div class="col custom-col-1">
+                    <div class="custom-descr">
+                      <div class="section-header">
+                        <h2>Преподаватели Pumpskill</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col custom-col-2">
+                    <div class="teachers-header-pic"><img src="images/teachers-header-pic.svg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-teachers-bottom">
+                <div class="row custom-row">
+                  <div class="col custom-col-1 ov-h">
+                    <div class="slider-wrapper teachers-slider-wrapper">
+                      <div class="teachers-slider slider-countable">
+                        <div class="slide">
+                          <div class="teacher-tmb">
+                            <div class="row">
+                              <div class="col col-teacher-l">
+                                <div class="teacher-tmb-author">
+                                  <div class="teacher-tmb-author-name">
+                                    <p>Денис Гараев</p>
+                                  </div>
+                                  <div class="teacher-tmb-author-post">
+                                    <p>Руководитель крупных IT проектов в РЖД</p>
+                                  </div>
+                                </div>
+                                <div class="teacher-tmb-text">
+                                  <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний</p>
+                                </div>
+                              </div>
+                              <div class="col col-teacher-r">
+                                <div class="teacher-soclinks"><a class="teacher-soclink teacher-soclink-fb" href="#"><img class="svg-inline" src="images/teacher-fb.svg"></a><a class="teacher-soclink teacher-soclink-vk" href="#"><img class="svg-inline" src="images/teacher-vk.svg"></a><a class="teacher-soclink teacher-soclink-twitter" href="#"><img class="svg-inline" src="images/teacher-twitter.svg"></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="teacher-tmb">
+                            <div class="row">
+                              <div class="col col-teacher-l">
+                                <div class="teacher-tmb-author">
+                                  <div class="teacher-tmb-author-name">
+                                    <p>Константин Константинопольский</p>
+                                  </div>
+                                  <div class="teacher-tmb-author-post">
+                                    <p>Руководитель крупных</p>
+                                  </div>
+                                </div>
+                                <div class="teacher-tmb-text">
+                                  <p>В удобное для вас время вы проходите уроки на нашей собственной платформе</p>
+                                </div>
+                              </div>
+                              <div class="col col-teacher-r">
+                                <div class="teacher-soclinks"><a class="teacher-soclink teacher-soclink-fb" href="#"><img class="svg-inline" src="images/teacher-fb.svg"></a><a class="teacher-soclink teacher-soclink-vk" href="#"><img class="svg-inline" src="images/teacher-vk.svg"></a><a class="teacher-soclink teacher-soclink-twitter" href="#"><img class="svg-inline" src="images/teacher-twitter.svg"></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="teacher-tmb">
+                            <div class="row">
+                              <div class="col col-teacher-l">
+                                <div class="teacher-tmb-author">
+                                  <div class="teacher-tmb-author-name">
+                                    <p>Денис Гараев</p>
+                                  </div>
+                                  <div class="teacher-tmb-author-post">
+                                    <p>Руководитель крупных IT проектов в РЖД</p>
+                                  </div>
+                                </div>
+                                <div class="teacher-tmb-text">
+                                  <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний</p>
+                                </div>
+                              </div>
+                              <div class="col col-teacher-r">
+                                <div class="teacher-soclinks"><a class="teacher-soclink teacher-soclink-fb" href="#"><img class="svg-inline" src="images/teacher-fb.svg"></a><a class="teacher-soclink teacher-soclink-vk" href="#"><img class="svg-inline" src="images/teacher-vk.svg"></a><a class="teacher-soclink teacher-soclink-twitter" href="#"><img class="svg-inline" src="images/teacher-twitter.svg"></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="teacher-tmb">
+                            <div class="row">
+                              <div class="col col-teacher-l">
+                                <div class="teacher-tmb-author">
+                                  <div class="teacher-tmb-author-name">
+                                    <p>Константин Константинопольский</p>
+                                  </div>
+                                  <div class="teacher-tmb-author-post">
+                                    <p>Руководитель крупных</p>
+                                  </div>
+                                </div>
+                                <div class="teacher-tmb-text">
+                                  <p>В удобное для вас время вы проходите уроки на нашей собственной платформе</p>
+                                </div>
+                              </div>
+                              <div class="col col-teacher-r">
+                                <div class="teacher-soclinks"><a class="teacher-soclink teacher-soclink-fb" href="#"><img class="svg-inline" src="images/teacher-fb.svg"></a><a class="teacher-soclink teacher-soclink-vk" href="#"><img class="svg-inline" src="images/teacher-vk.svg"></a><a class="teacher-soclink teacher-soclink-twitter" href="#"><img class="svg-inline" src="images/teacher-twitter.svg"></a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col custom-col-2 ov-h">
+                    <div class="custom-pic">
+                      <div class="slider-wrapper teachers-pics-slider-wrapper">
+                        <div class="teachers-pics-slider">
+                          <div class="slide"><img src="files/teacher-1-tmb.jpg"></div>
+                          <div class="slide"><img src="files/teacher-2-tmb.jpg"></div>
+                          <div class="slide"><img src="files/teacher-1-tmb.jpg"></div>
+                          <div class="slide"><img src="files/teacher-2-tmb.jpg"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Преподаватели END-->
+        <!-- Отзывы-->
+        <div class="section section-reviews section-wide">
+          <div class="section-content">
+            <div class="section-header">
+              <div class="container">
+                <h2>О&nbsp;нас говорят</h2>
+              </div>
+            </div>
+            <div class="section-body">
+              <div class="container">
+                <div class="slider-wrapper reviews-slider-wrapper">
+                  <div class="reviews-slider">
+                    <div class="slide">
+                      <div class="review-tmb">
+                        <div class="cont">
+                          <div class="review-tmb-author">
+                            <div class="review-tmb-author-pic"><img src="files/review-author-1.jpg"></div>
+                            <div class="review-tmb-author-descr">
+                              <div class="review-tmb-author-name">
+                                <p>Антон Петров</p>
+                              </div>
+                              <div class="review-tmb-author-info">
+                                <p>21 год, Москва</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-tmb-descr">
+                            <div class="review-tmb-text">
+                              <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                            </div>
+                            <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#" data-toggle="modal" data-target="#reviewModal" data-url="load/review-1.html">Читать отзыв</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="review-tmb">
+                        <div class="cont">
+                          <div class="review-tmb-author">
+                            <div class="review-tmb-author-pic"><img src="files/review-author-2.jpg"></div>
+                            <div class="review-tmb-author-descr">
+                              <div class="review-tmb-author-name">
+                                <p>Антон Петров</p>
+                              </div>
+                              <div class="review-tmb-author-info">
+                                <p>21 год, Москва</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-tmb-descr">
+                            <div class="review-tmb-text">
+                              <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения...</p>
+                            </div>
+                            <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#" data-toggle="modal" data-target="#reviewModal" data-url="load/review-2.html">Читать отзыв</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="review-tmb">
+                        <div class="cont">
+                          <div class="review-tmb-author">
+                            <div class="review-tmb-author-pic"><img src="files/review-author-1.jpg"></div>
+                            <div class="review-tmb-author-descr">
+                              <div class="review-tmb-author-name">
+                                <p>Антон Петров</p>
+                              </div>
+                              <div class="review-tmb-author-info">
+                                <p>21 год, Москва</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-tmb-descr">
+                            <div class="review-tmb-text">
+                              <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                            </div>
+                            <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#" data-toggle="modal" data-target="#reviewModal" data-url="load/review-1.html">Читать отзыв</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="review-tmb">
+                        <div class="cont">
+                          <div class="review-tmb-author">
+                            <div class="review-tmb-author-pic"><img src="files/review-author-2.jpg"></div>
+                            <div class="review-tmb-author-descr">
+                              <div class="review-tmb-author-name">
+                                <p>Антон Петров</p>
+                              </div>
+                              <div class="review-tmb-author-info">
+                                <p>21 год, Москва</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-tmb-descr">
+                            <div class="review-tmb-text">
+                              <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения...</p>
+                            </div>
+                            <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#" data-toggle="modal" data-target="#reviewModal" data-url="load/review-2.html">Читать отзыв</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Отзывы END-->
+        <!-- FAQ-->
+        <div class="section section-faq">
+          <div class="container">
+            <div class="section-content">
+              <div class="faq-wrapper">
+                <div class="faq-wrapper-inner">
+                  <div class="section-header">
+                    <h2>Ответы на вопросы</h2>
+                  </div>
+                  <div class="faq-list">
+                    <div class="faq-item">
+                      <div class="faq-item-ttl">
+                        <div class="faq-item-arrow"></div>
+                        <h3>Можно ли общаться с преподавателем?</h3>
+                      </div>
+                      <div class="faq-item-content">
+                        <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-item-ttl">
+                        <div class="faq-item-arrow"></div>
+                        <h3>Проводятся ли вебинары?</h3>
+                      </div>
+                      <div class="faq-item-content">
+                        <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-item-ttl">
+                        <div class="faq-item-arrow"></div>
+                        <h3>Что если не буду успевать?</h3>
+                      </div>
+                      <div class="faq-item-content">
+                        <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-item-ttl">
+                        <div class="faq-item-arrow"></div>
+                        <h3>Я ничего не знаю. Можно ли начинать учиться?</h3>
+                      </div>
+                      <div class="faq-item-content">
+                        <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-item-ttl">
+                        <div class="faq-item-arrow"></div>
+                        <h3>Я уже знаю Python. Будет ли мне полезен курс?</h3>
+                      </div>
+                      <div class="faq-item-content">
+                        <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-item-ttl">
+                        <div class="faq-item-arrow"></div>
+                        <h3>Сколько времени тратить на обучение?</h3>
+                      </div>
+                      <div class="faq-item-content">
+                        <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-item-ttl">
+                        <div class="faq-item-arrow"></div>
+                        <h3>Где кодить?</h3>
+                      </div>
+                      <div class="faq-item-content">
+                        <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                      </div>
+                    </div>
+                    <div class="faq-item">
+                      <div class="faq-item-ttl">
+                        <div class="faq-item-arrow"></div>
+                        <h3>Какой компьютер нужен?</h3>
+                      </div>
+                      <div class="faq-item-content">
+                        <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FAQ END-->
+        <!-- Форма-->
+        <div class="section section-with-bg section-order">
+          <div class="container">
+            <div class="section-content">
+              <div class="order-form-wrapper">
+                <div class="row">
+                  <div class="col order-col-1">
+                    <div class="section-header">
+                      <h2>Запишитесь на&nbsp;курс <span class="blue">со&nbsp;скидкой 53%</span></h2>
+                    </div>
+                    <div class="order-form">
+                      <form>
+                        <div class="row">
+                          <div class="col col-12">
+                            <div class="form-group">
+                              <label class="placeholder" for="discount_name">Ваше имя</label>
+                              <input type="text" name="discount_name" id="discount_name" required>
+                            </div>
+                          </div>
+                          <div class="col col-order-phone">
+                            <div class="form-group">
+                              <label class="placeholder" for="discount_phone">Телефон</label>
+                              <input class="input-phone phone-email-group" type="text" name="discount_phone" id="discount_phone">
+                            </div>
+                          </div>
+                          <div class="col col-order-or">
+                            <p>или</p>
+                          </div>
+                          <div class="col col-order-email">
+                            <div class="form-group">
+                              <label class="placeholder" for="discount_email">E-mail</label>
+                              <input class="phone-email-group" type="email" name="discount_email" id="discount_email">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-footer">
+                          <div class="row">
+                            <div class="col">
+                              <input class="btn btn-2" type="submit" value="Записаться и оплатить">
+                            </div>
+                            <div class="col">
+                              <button class="btn btn-3">Получить консультацию</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-agree">
+                          <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col order-col-2">
+                    <div class="dicount-form-info">
+                      <div class="discount-form-info-text">
+                        <p>Скидка действительна<br><span>до 30 сентября</span></p>
+                      </div>
+                      <div class="discount-form-info-price">
+                        <div class="discount-form-info-price-ttl">Полная стоимость курса</div>
+                        <div class="discount-form-info-price-new">
+                          <p>25&nbsp;500&nbsp;₽</p>
+                        </div>
+                        <div class="discount-form-info-price-old">
+                          <p><span>29&nbsp;500&nbsp;₽</span> без скидки</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="order-descr order-descr-alt">
+                      <p>Если у Вас есть вопросы, звоните +7 (499) 899-16-74</p>
+                      <div class="order-soclinks-wrapper">
+                        <div class="order-soclinks-ttl">
+                          <p>Или пишите нам:</p>
+                        </div>
+                        <div class="order-soclinks">
+                          <div class="soclinks"><a class="soclink soclink-whatsapp" href="#"></a><a class="soclink soclink-telegram" href="#"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Форма END-->
+        <!-- Другие курсы-->
+        <div class="section section-more section-wide">
+          <div class="section-content">
+            <div class="section-header">
+              <div class="container">
+                <h2>Другие курсы профессии</h2>
+              </div>
+            </div>
+            <div class="section-body">
+              <div class="container">
+                <div class="slider-wrapper courses-slider-wrapper courses-slider-wrapper-alt">
+                  <div class="courses-slider-alt">
+                    <div class="slide">
+                      <div class="course-tmb">
+                        <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
+                            <div class="course-tmb-top-content">
+                              <div class="course-tmb-header">
+                                <div class="course-tmb-sup-ttl">Курс 1</div>
+                                <h3>Название курса 1</h3>
+                              </div>
+                              <div class="course-tmb-price">
+                                <p>10&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
+                              </div>
+                              <div class="h5">Кому подойдет?</div>
+                              <p>Любой уровень подготовки</p>
+                              <div class="h5">Чему научим?</div>
+                              <ul class="course-ul">
+                                <li>Основы html, css, js</li>
+                                <li>Создавать адаптивную верстку на Bootstrap4</li>
+                              </ul>
+                            </div></a>
+                          <div class="course-tmb-bottom">
+                            <div class="row">
+                              <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
+                              <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="course-tmb">
+                        <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
+                            <div class="course-tmb-top-content">
+                              <div class="course-tmb-header">
+                                <div class="course-tmb-sup-ttl">Курс 2</div>
+                                <h3>Название курса 2</h3>
+                              </div>
+                              <div class="course-tmb-price">
+                                <p>20&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
+                              </div>
+                              <div class="h5">Кому подойдет?</div>
+                              <p>Любой уровень подготовки</p>
+                              <div class="h5"> Чему научим?</div>
+                              <ul class="course-ul">
+                                <li>Основы html, css, js</li>
+                                <li>Создавать адаптивную верстку на Bootstrap4</li>
+                                <li>Писать стили на CSS и подключать их к проекту</li>
+                              </ul>
+                            </div></a>
+                          <div class="course-tmb-bottom">
+                            <div class="row">
+                              <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
+                              <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="course-tmb">
+                        <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
+                            <div class="course-tmb-top-content">
+                              <div class="course-tmb-header">
+                                <div class="course-tmb-sup-ttl">Курс 3</div>
+                                <h3>Название курса 3</h3>
+                              </div>
+                              <div class="course-tmb-price">
+                                <p>30&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
+                              </div>
+                              <div class="h5">Кому подойдет?</div>
+                              <p>Любой уровень подготовки</p>
+                              <div class="h5"> Чему научим?</div>
+                              <ul class="course-ul">
+                                <li>Основы html, css, js</li>
+                                <li>Создавать адаптивную верстку на Bootstrap4</li>
+                                <li>Писать стили на CSS и подключать их к проекту</li>
+                                <li>Писать JS скрипты</li>
+                              </ul>
+                            </div></a>
+                          <div class="course-tmb-bottom">
+                            <div class="row">
+                              <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
+                              <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="course-tmb">
+                        <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
+                            <div class="course-tmb-top-content">
+                              <div class="course-tmb-header">
+                                <div class="course-tmb-sup-ttl">Курс 4</div>
+                                <h3>Название курса 4</h3>
+                              </div>
+                              <div class="course-tmb-price">
+                                <p>10&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
+                              </div>
+                              <div class="h5">Кому подойдет?</div>
+                              <p>Любой уровень подготовки</p>
+                              <div class="h5"> Чему научим?</div>
+                              <ul class="course-ul">
+                                <li>Основы html, css, js</li>
+                                <li>Создавать адаптивную верстку на Bootstrap4</li>
+                              </ul>
+                            </div></a>
+                          <div class="course-tmb-bottom">
+                            <div class="row">
+                              <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
+                              <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="course-tmb">
+                        <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
+                            <div class="course-tmb-top-content">
+                              <div class="course-tmb-header">
+                                <div class="course-tmb-sup-ttl">Курс 5</div>
+                                <h3>Название курса 5</h3>
+                              </div>
+                              <div class="course-tmb-price">
+                                <p>20&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
+                              </div>
+                              <div class="h5">Кому подойдет?</div>
+                              <p>Любой уровень подготовки</p>
+                              <div class="h5"> Чему научим?</div>
+                              <ul class="course-ul">
+                                <li>Основы html, css, js</li>
+                                <li>Создавать адаптивную верстку на Bootstrap4</li>
+                                <li>Писать стили на CSS и подключать их к проекту</li>
+                              </ul>
+                            </div></a>
+                          <div class="course-tmb-bottom">
+                            <div class="row">
+                              <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
+                              <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="course-tmb">
+                        <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
+                            <div class="course-tmb-top-content">
+                              <div class="course-tmb-header">
+                                <div class="course-tmb-sup-ttl">Курс 6</div>
+                                <h3>Название курса 6</h3>
+                              </div>
+                              <div class="course-tmb-price">
+                                <p>30&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
+                              </div>
+                              <div class="h5">Кому подойдет?</div>
+                              <p>Любой уровень подготовки</p>
+                              <div class="h5"> Чему научим?</div>
+                              <ul class="course-ul">
+                                <li>Основы html, css, js</li>
+                                <li>Создавать адаптивную верстку на Bootstrap4</li>
+                                <li>Писать стили на CSS и подключать их к проекту</li>
+                                <li>Писать JS скрипты</li>
+                              </ul>
+                            </div></a>
+                          <div class="course-tmb-bottom">
+                            <div class="row">
+                              <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
+                              <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Другие курсы END-->
+        <!-- Картинка 2-->
+        <div class="section section-profession-pic">
+          <div class="marquee pic-marquee">
+            <div class="marquee-content">
+              <div class="marquee-list">
+                <div class="marquee-row">
+                  <div class="marquee-item"><img src="images/professions-pic-2.svg"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Картинка 2 END-->
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="row">
+              <div class="col footer-col-1">
+                <div class="footer-logo"><a href="#"><img src="images/footer-logo.svg" alt="Pumpskill"></a></div>
+                <div class="footer-copy">
+                  <p>© 2020 PumpSkill</p>
+                </div>
+                <div class="footer-agree">
+                  <p><a href="#">Пользовательское соглашение</a></p>
+                </div>
+                <div class="footer-dev-over-wrapper">
+                  <div class="cont">
+                    <div class="footer-dev-wrapper"><a class="footer-dev" href="#">Made&nbsp;by <span>PARADIGMA</span></a></div>
+                    <div class="footer-art-direction">
+                      <p>Art direction by&nbsp;<a href="#">Gromadin</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col footer-col-2">
+                <div class="footer-ttl">Pumpskill</div>
+                <ul class="footer-menu">
+                  <li><a href="#">О&nbsp;школе</a></li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Выбрать профессию</a></li>
+                </ul>
+              </div>
+              <div class="col footer-col-3">
+                <div class="footer-ttl">Контакты</div>
+                <div class="footer-contacts">
+                  <div class="footer-phone">
+                    <div class="footer-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
+                    <div class="footer-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Обратный звонок</a></div>
+                  </div>
+                  <div class="footer-soclinks-wrapper">
+                    <div class="footer-soclinks"><a class="footer-soclink footer-soclink-fb" href="#"><img class="svg-inline" src="images/footer-fb.svg"></a><a class="footer-soclink footer-soclink-vk" href="#"><img class="svg-inline" src="images/footer-vk.svg"></a><a class="footer-soclink footer-soclink-twitter" href="#"><img class="svg-inline" src="images/footer-twitter.svg"></a><a class="footer-soclink footer-soclink-telegram" href="#"><img class="svg-inline" src="images/footer-telegram.svg"></a><a class="footer-soclink footer-soclink-whatsapp" href="#"><img class="svg-inline" src="images/footer-whatsapp.svg"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade form-modal" id="consultModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
             <div class="order-form-wrapper">
               <div class="section-header">
                 <h2>Получи полную программу и&nbsp;консультацию</h2>
@@ -438,17 +1345,18 @@
                 <div class="col order-col-1">
                   <div class="order-form">
                     <form>
+                      <input type="hidden" name="program_modal_course" id="program_modal_course">
                       <div class="row">
                         <div class="col col-12">
                           <div class="form-group">
-                            <label class="placeholder" for="program_name">Ваше имя</label>
-                            <input type="text" name="program_name" id="program_name" required>
+                            <label class="placeholder" for="program_modal_name">Ваше имя</label>
+                            <input type="text" name="program_modal_name" id="program_modal_name" required>
                           </div>
                         </div>
                         <div class="col col-order-phone">
                           <div class="form-group">
-                            <label class="placeholder" for="program_phone">Телефон</label>
-                            <input class="input-phone phone-email-group" type="text" name="program_phone" id="program_phone">
+                            <label class="placeholder" for="program_modal_phone">Телефон</label>
+                            <input class="input-phone phone-email-group" type="text" name="program_modal_phone" id="program_modal_phone">
                           </div>
                         </div>
                         <div class="col col-order-or">
@@ -456,8 +1364,8 @@
                         </div>
                         <div class="col col-order-email">
                           <div class="form-group">
-                            <label class="placeholder" for="program_email">E-mail</label>
-                            <input class="phone-email-group" type="email" name="program_email" id="program_email">
+                            <label class="placeholder" for="program_modal_email">E-mail</label>
+                            <input class="phone-email-group" type="email" name="program_modal_email" id="program_modal_email">
                           </div>
                         </div>
                       </div>
@@ -488,524 +1396,13 @@
           </div>
         </div>
       </div>
-      <!-- Получи программу END-->
-      <!-- Картинка-->
-      <div class="section section-main-pic section-main-pic-alt"><img src="files/main-pic.jpg"></div>
-      <!-- Картинка END-->
-      <!-- Как проходит обучение-->
-      <div class="section section-with-bg section-bg-white section-with-border section-how">
-        <div class="container">
-          <div class="section-content section-content-custom">
-            <div class="row custom-row">
-              <div class="col custom-col-1">
-                <div class="custom-descr">
-                  <div class="section-header">
-                    <h2>Как проходит обучение?</h2>
-                    <div class="section-sub-header">
-                      <p>На протяжении всего обучения вас консультирует опытный преподаватель</p>
-                    </div>
-                  </div>
-                  <div class="how-list">
-                    <div class="how-tmb">
-                      <div class="how-tmb-num"></div>
-                      <div class="how-tmb-descr">
-                        <h3>Уроки и практика</h3>
-                        <p>В удобное для вас  время вы проходите уроки на нашей собственной платформе, решаете тесты  и практические задачи</p>
-                      </div>
-                    </div>
-                    <div class="how-tmb">
-                      <div class="how-tmb-num"></div>
-                      <div class="how-tmb-descr">
-                        <h3>Преподаватель и вебинары</h3>
-                        <p>Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний</p>
-                      </div>
-                    </div>
-                    <div class="how-tmb">
-                      <div class="how-tmb-num"></div>
-                      <div class="how-tmb-descr">
-                        <h3>Домашние задания</h3>
-                        <p>Выполняете домашние задания - их лично проверяет ваш преподаватель и дает обратную связь с разбором ошибок</p>
-                      </div>
-                    </div>
-                    <div class="how-tmb">
-                      <div class="how-tmb-num"></div>
-                      <div class="how-tmb-descr">
-                        <h3>Дипломный проект</h3>
-                        <p>В конце курса выполняете дипломный проект, который сможете добавить в ваше резюме</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col custom-col-2">
-                <div class="custom-pic">
-                  <div class="how-pics">
-                    <div class="how-pic how-pic-1">
-                      <div class="how-pic-img" style="background-image: url(files/work-1.jpg);"></div>
-                    </div>
-                    <div class="how-pic how-pic-2">
-                      <div class="how-pic-img" style="background-image: url(files/work-2.jpg);"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Как проходит обучение END-->
-      <!-- Примеры дипломных работ-->
-      <div class="section section-works-header">
-        <div class="container">
-          <div class="section-content">
-            <h2>Примеры дипломных работ</h2>
-          </div>
-        </div>
-      </div>
-      <div class="container slider-wrapper works-slider-wrapper">
-        <div class="works-slider slider-countable">
-          <div class="slide">
-            <div class="section section-with-bg section-bg-white section-with-border section-works-slide">
-              <div class="section-content section-content-custom">
-                <div class="row custom-row">
-                  <div class="col custom-col-1">
-                    <div class="works-slide-pic" style="background-image: url(files/work-1.jpg)"></div>
-                  </div>
-                  <div class="col custom-col-2">
-                    <div class="works-slide-descr">
-                      <h3>Название примера для дипломного проекта</h3>
-                      <ul>
-                        <li>Фреймворк Flask</li>
-                        <li>Обработка POST и GET запросов</li>
-                        <li>Создание и запуск сервера на Python с помощью Flask</li>
-                        <li>Базы данных и библиотека Sqlalchemy для работы с БД</li>
-                        <li>HTML объект <form> для отправки POST запросов</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="section section-with-bg section-bg-white section-with-border section-works-slide">
-              <div class="section-content section-content-custom">
-                <div class="row custom-row">
-                  <div class="col custom-col-1">
-                    <div class="works-slide-pic" style="background-image: url(files/work-2.jpg)"></div>
-                  </div>
-                  <div class="col custom-col-2">
-                    <div class="works-slide-descr">
-                      <h3>Второй проект</h3>
-                      <ul>
-                        <li>Фреймворк Flask</li>
-                        <li>Обработка POST и GET запросов</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="section section-with-bg section-bg-white section-with-border section-works-slide">
-              <div class="section-content section-content-custom">
-                <div class="row custom-row">
-                  <div class="col custom-col-1">
-                    <div class="works-slide-pic" style="background-image: url(files/work-1.jpg)"></div>
-                  </div>
-                  <div class="col custom-col-2">
-                    <div class="works-slide-descr">
-                      <h3>Название примера для дипломного проекта</h3>
-                      <ul>
-                        <li>Фреймворк Flask</li>
-                        <li>Обработка POST и GET запросов</li>
-                        <li>Создание и запуск сервера на Python с помощью Flask</li>
-                        <li>Базы данных и библиотека Sqlalchemy для работы с БД</li>
-                        <li>HTML объект <form> для отправки POST запросов</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="section section-with-bg section-bg-white section-with-border section-works-slide">
-              <div class="section-content section-content-custom">
-                <div class="row custom-row">
-                  <div class="col custom-col-1">
-                    <div class="works-slide-pic" style="background-image: url(files/work-2.jpg)"></div>
-                  </div>
-                  <div class="col custom-col-2">
-                    <div class="works-slide-descr">
-                      <h3>Второй проект</h3>
-                      <ul>
-                        <li>Фреймворк Flask</li>
-                        <li>Обработка POST и GET запросов</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Примеры дипломных работ END-->
-      <!-- Преподаватели-->
-      <div class="section section-with-bg section-bg-white section-with-border section-teachers">
-        <div class="container">
-          <div class="section-content section-content-custom">
-            <div class="section-teachers-top">
-              <div class="row custom-row">
-                <div class="col custom-col-1">
-                  <div class="custom-descr">
-                    <div class="section-header">
-                      <h2>Преподаватели Pumpskill</h2>
-                    </div>
-                  </div>
-                </div>
-                <div class="col custom-col-2">
-                  <div class="teachers-header-pic"><img src="images/teachers-header-pic.svg"></div>
-                </div>
-              </div>
-            </div>
-            <div class="section-teachers-bottom">
-              <div class="row custom-row">
-                <div class="col custom-col-1 ov-h">
-                  <div class="slider-wrapper teachers-slider-wrapper">
-                    <div class="teachers-slider slider-countable">
-                      <div class="slide">
-                        <div class="teacher-tmb">
-                          <div class="row">
-                            <div class="col col-teacher-l">
-                              <div class="teacher-tmb-author">
-                                <div class="teacher-tmb-author-name">
-                                  <p>Денис Гараев</p>
-                                </div>
-                                <div class="teacher-tmb-author-post">
-                                  <p>Руководитель крупных IT проектов в РЖД</p>
-                                </div>
-                              </div>
-                              <div class="teacher-tmb-text">
-                                <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний</p>
-                              </div>
-                            </div>
-                            <div class="col col-teacher-r">
-                              <div class="teacher-soclinks"><a class="teacher-soclink teacher-soclink-fb" href="#"><img class="svg-inline" src="images/teacher-fb.svg"></a><a class="teacher-soclink teacher-soclink-vk" href="#"><img class="svg-inline" src="images/teacher-vk.svg"></a><a class="teacher-soclink teacher-soclink-twitter" href="#"><img class="svg-inline" src="images/teacher-twitter.svg"></a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide">
-                        <div class="teacher-tmb">
-                          <div class="row">
-                            <div class="col col-teacher-l">
-                              <div class="teacher-tmb-author">
-                                <div class="teacher-tmb-author-name">
-                                  <p>Константин Константинопольский</p>
-                                </div>
-                                <div class="teacher-tmb-author-post">
-                                  <p>Руководитель крупных</p>
-                                </div>
-                              </div>
-                              <div class="teacher-tmb-text">
-                                <p>В удобное для вас время вы проходите уроки на нашей собственной платформе</p>
-                              </div>
-                            </div>
-                            <div class="col col-teacher-r">
-                              <div class="teacher-soclinks"><a class="teacher-soclink teacher-soclink-fb" href="#"><img class="svg-inline" src="images/teacher-fb.svg"></a><a class="teacher-soclink teacher-soclink-vk" href="#"><img class="svg-inline" src="images/teacher-vk.svg"></a><a class="teacher-soclink teacher-soclink-twitter" href="#"><img class="svg-inline" src="images/teacher-twitter.svg"></a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide">
-                        <div class="teacher-tmb">
-                          <div class="row">
-                            <div class="col col-teacher-l">
-                              <div class="teacher-tmb-author">
-                                <div class="teacher-tmb-author-name">
-                                  <p>Денис Гараев</p>
-                                </div>
-                                <div class="teacher-tmb-author-post">
-                                  <p>Руководитель крупных IT проектов в РЖД</p>
-                                </div>
-                              </div>
-                              <div class="teacher-tmb-text">
-                                <p>В удобное для вас время вы проходите уроки на нашей собственной платформе, решаете тесты и практические задачи. Общаетесь с преподавателем в slack, получаете подробные консультации, можно скинуть код на ревью, проходите вебинары для закрепления знаний</p>
-                              </div>
-                            </div>
-                            <div class="col col-teacher-r">
-                              <div class="teacher-soclinks"><a class="teacher-soclink teacher-soclink-fb" href="#"><img class="svg-inline" src="images/teacher-fb.svg"></a><a class="teacher-soclink teacher-soclink-vk" href="#"><img class="svg-inline" src="images/teacher-vk.svg"></a><a class="teacher-soclink teacher-soclink-twitter" href="#"><img class="svg-inline" src="images/teacher-twitter.svg"></a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="slide">
-                        <div class="teacher-tmb">
-                          <div class="row">
-                            <div class="col col-teacher-l">
-                              <div class="teacher-tmb-author">
-                                <div class="teacher-tmb-author-name">
-                                  <p>Константин Константинопольский</p>
-                                </div>
-                                <div class="teacher-tmb-author-post">
-                                  <p>Руководитель крупных</p>
-                                </div>
-                              </div>
-                              <div class="teacher-tmb-text">
-                                <p>В удобное для вас время вы проходите уроки на нашей собственной платформе</p>
-                              </div>
-                            </div>
-                            <div class="col col-teacher-r">
-                              <div class="teacher-soclinks"><a class="teacher-soclink teacher-soclink-fb" href="#"><img class="svg-inline" src="images/teacher-fb.svg"></a><a class="teacher-soclink teacher-soclink-vk" href="#"><img class="svg-inline" src="images/teacher-vk.svg"></a><a class="teacher-soclink teacher-soclink-twitter" href="#"><img class="svg-inline" src="images/teacher-twitter.svg"></a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col custom-col-2 ov-h">
-                  <div class="custom-pic">
-                    <div class="slider-wrapper teachers-pics-slider-wrapper">
-                      <div class="teachers-pics-slider">
-                        <div class="slide"><img src="files/teacher-1-tmb.jpg"></div>
-                        <div class="slide"><img src="files/teacher-2-tmb.jpg"></div>
-                        <div class="slide"><img src="files/teacher-1-tmb.jpg"></div>
-                        <div class="slide"><img src="files/teacher-2-tmb.jpg"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Преподаватели END-->
-      <!-- Отзывы-->
-      <div class="section section-reviews section-wide">
-        <div class="section-content">
-          <div class="section-header">
-            <div class="container">
-              <h2>О&nbsp;нас говорят</h2>
-            </div>
-          </div>
-          <div class="section-body">
-            <div class="container">
-              <div class="slider-wrapper reviews-slider-wrapper">
-                <div class="reviews-slider">
-                  <div class="slide">
-                    <div class="review-tmb">
-                      <div class="cont">
-                        <div class="review-tmb-author">
-                          <div class="review-tmb-author-pic"><img src="files/review-author-1.jpg"></div>
-                          <div class="review-tmb-author-descr">
-                            <div class="review-tmb-author-name">
-                              <p>Антон Петров</p>
-                            </div>
-                            <div class="review-tmb-author-info">
-                              <p>21 год, Москва</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-tmb-descr">
-                          <div class="review-tmb-text">
-                            <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
-                          </div>
-                          <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#" data-toggle="modal" data-target="#reviewModal" data-url="load/review-1.html">Читать отзыв</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="review-tmb">
-                      <div class="cont">
-                        <div class="review-tmb-author">
-                          <div class="review-tmb-author-pic"><img src="files/review-author-2.jpg"></div>
-                          <div class="review-tmb-author-descr">
-                            <div class="review-tmb-author-name">
-                              <p>Антон Петров</p>
-                            </div>
-                            <div class="review-tmb-author-info">
-                              <p>21 год, Москва</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-tmb-descr">
-                          <div class="review-tmb-text">
-                            <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения...</p>
-                          </div>
-                          <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#" data-toggle="modal" data-target="#reviewModal" data-url="load/review-2.html">Читать отзыв</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="review-tmb">
-                      <div class="cont">
-                        <div class="review-tmb-author">
-                          <div class="review-tmb-author-pic"><img src="files/review-author-1.jpg"></div>
-                          <div class="review-tmb-author-descr">
-                            <div class="review-tmb-author-name">
-                              <p>Антон Петров</p>
-                            </div>
-                            <div class="review-tmb-author-info">
-                              <p>21 год, Москва</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-tmb-descr">
-                          <div class="review-tmb-text">
-                            <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
-                          </div>
-                          <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#" data-toggle="modal" data-target="#reviewModal" data-url="load/review-1.html">Читать отзыв</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="review-tmb">
-                      <div class="cont">
-                        <div class="review-tmb-author">
-                          <div class="review-tmb-author-pic"><img src="files/review-author-2.jpg"></div>
-                          <div class="review-tmb-author-descr">
-                            <div class="review-tmb-author-name">
-                              <p>Антон Петров</p>
-                            </div>
-                            <div class="review-tmb-author-info">
-                              <p>21 год, Москва</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="review-tmb-descr">
-                          <div class="review-tmb-text">
-                            <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения...</p>
-                          </div>
-                          <div class="review-tmb-button"><a class="btn btn-1 btn-1-small" href="#" data-toggle="modal" data-target="#reviewModal" data-url="load/review-2.html">Читать отзыв</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Отзывы END-->
-      <!-- FAQ-->
-      <div class="section section-faq">
-        <div class="container">
-          <div class="section-content">
-            <div class="faq-wrapper">
-              <div class="faq-wrapper-inner">
-                <div class="section-header">
-                  <h2>Ответы на вопросы</h2>
-                </div>
-                <div class="faq-list">
-                  <div class="faq-item">
-                    <div class="faq-item-ttl">
-                      <div class="faq-item-arrow"></div>
-                      <h3>Можно ли общаться с преподавателем?</h3>
-                    </div>
-                    <div class="faq-item-content">
-                      <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-item-ttl">
-                      <div class="faq-item-arrow"></div>
-                      <h3>Проводятся ли вебинары?</h3>
-                    </div>
-                    <div class="faq-item-content">
-                      <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-item-ttl">
-                      <div class="faq-item-arrow"></div>
-                      <h3>Что если не буду успевать?</h3>
-                    </div>
-                    <div class="faq-item-content">
-                      <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-item-ttl">
-                      <div class="faq-item-arrow"></div>
-                      <h3>Я ничего не знаю. Можно ли начинать учиться?</h3>
-                    </div>
-                    <div class="faq-item-content">
-                      <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-item-ttl">
-                      <div class="faq-item-arrow"></div>
-                      <h3>Я уже знаю Python. Будет ли мне полезен курс?</h3>
-                    </div>
-                    <div class="faq-item-content">
-                      <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-item-ttl">
-                      <div class="faq-item-arrow"></div>
-                      <h3>Сколько времени тратить на обучение?</h3>
-                    </div>
-                    <div class="faq-item-content">
-                      <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-item-ttl">
-                      <div class="faq-item-arrow"></div>
-                      <h3>Где кодить?</h3>
-                    </div>
-                    <div class="faq-item-content">
-                      <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
-                    </div>
-                  </div>
-                  <div class="faq-item">
-                    <div class="faq-item-ttl">
-                      <div class="faq-item-arrow"></div>
-                      <h3>Какой компьютер нужен?</h3>
-                    </div>
-                    <div class="faq-item-content">
-                      <p>Конечно! Вы сможете общаться напрямую с преподавателем через личные сообщения в мессенджере слак. Вопросы можно задавать в любое время и сколько угодно...</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- FAQ END-->
-      <!-- Форма-->
-      <div class="section section-with-bg section-order">
-        <div class="container">
-          <div class="section-content">
+      <div class="modal fade form-modal" id="orderModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
             <div class="order-form-wrapper">
-              <div class="section-header section-header-discount">
-                <div class="row">
-                  <div class="col section-header-discount-l">
-                    <h2>Запишись и&nbsp;получи скидку&nbsp;40%</h2>
-                  </div>
-                  <div class="col section-header-discount-r">
-                    <div class="dicount-form-info">
-                      <div class="discount-form-info-text">
-                        <p>Запишитесь до <span>10 сентября</span> и получите професссию всего за</p>
-                      </div>
-                      <div class="discount-form-info-price">
-                        <p>25&nbsp;500&nbsp;₽</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="section-header">
+                <h2>Запишись сейчас и получи скидку на курс 40%</h2>
               </div>
               <div class="row">
                 <div class="col order-col-1">
@@ -1014,14 +1411,14 @@
                       <div class="row">
                         <div class="col col-12">
                           <div class="form-group">
-                            <label class="placeholder" for="discount_name">Ваше имя</label>
-                            <input type="text" name="discount_name" id="discount_name" required>
+                            <label class="placeholder" for="order_modal_name">Ваше имя</label>
+                            <input type="text" name="order_modal_name" id="order_modal_name" required>
                           </div>
                         </div>
                         <div class="col col-order-phone">
                           <div class="form-group">
-                            <label class="placeholder" for="discount_phone">Телефон</label>
-                            <input class="input-phone phone-email-group" type="text" name="discount_phone" id="discount_phone">
+                            <label class="placeholder" for="order_modal_phone">Телефон</label>
+                            <input class="input-phone phone-email-group" type="text" name="order_modal_phone" id="order_modal_phone">
                           </div>
                         </div>
                         <div class="col col-order-or">
@@ -1029,8 +1426,8 @@
                         </div>
                         <div class="col col-order-email">
                           <div class="form-group">
-                            <label class="placeholder" for="discount_email">E-mail</label>
-                            <input class="phone-email-group" type="email" name="discount_email" id="discount_email">
+                            <label class="placeholder" for="order_modal_email">E-mail</label>
+                            <input class="phone-email-group" type="email" name="order_modal_email" id="order_modal_email">
                           </div>
                         </div>
                       </div>
@@ -1045,206 +1442,18 @@
                 </div>
                 <div class="col order-col-2">
                   <div class="order-descr">
-                    <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы.</p>
-                    <div class="order-soclinks-wrapper">
-                      <div class="order-soclinks-ttl">
-                        <p>Или пишите нам:</p>
+                    <div class="info-list info-list-alt">
+                      <div class="info-tmb">
+                        <div class="info-tmb-ttl">Старт курса:</div>
+                        <div class="info-tmb-text">15 ноября</div>
                       </div>
-                      <div class="order-soclinks">
-                        <div class="soclinks"><a class="soclink soclink-whatsapp" href="#"></a><a class="soclink soclink-telegram" href="#"></a></div>
+                      <div class="info-tmb">
+                        <div class="info-tmb-ttl">Осталось:</div>
+                        <div class="info-tmb-text">3 места</div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Форма END-->
-      <!-- Другие курсы-->
-      <div class="section section-more section-wide">
-        <div class="section-content">
-          <div class="section-header">
-            <div class="container">
-              <h2>Другие курсы профессии</h2>
-            </div>
-          </div>
-          <div class="section-body">
-            <div class="container">
-              <div class="slider-wrapper courses-slider-wrapper courses-slider-wrapper-alt">
-                <div class="courses-slider-alt">
-                  <div class="slide">
-                    <div class="course-tmb">
-                      <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
-                          <div class="course-tmb-top-content">
-                            <div class="course-tmb-header">
-                              <div class="course-tmb-sup-ttl">Курс 1</div>
-                              <h3>Название курса 1</h3>
-                            </div>
-                            <div class="course-tmb-price">
-                              <p>10&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
-                            </div>
-                            <div class="h5">Кому подойдет?</div>
-                            <p>Любой уровень подготовки</p>
-                            <div class="h5">Чему научим?</div>
-                            <ul class="course-ul">
-                              <li>Основы html, css, js</li>
-                              <li>Создавать адаптивную верстку на Bootstrap4</li>
-                            </ul>
-                          </div></a>
-                        <div class="course-tmb-bottom">
-                          <div class="row">
-                            <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
-                            <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="course-tmb">
-                      <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
-                          <div class="course-tmb-top-content">
-                            <div class="course-tmb-header">
-                              <div class="course-tmb-sup-ttl">Курс 2</div>
-                              <h3>Название курса 2</h3>
-                            </div>
-                            <div class="course-tmb-price">
-                              <p>20&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
-                            </div>
-                            <div class="h5">Кому подойдет?</div>
-                            <p>Любой уровень подготовки</p>
-                            <div class="h5"> Чему научим?</div>
-                            <ul class="course-ul">
-                              <li>Основы html, css, js</li>
-                              <li>Создавать адаптивную верстку на Bootstrap4</li>
-                              <li>Писать стили на CSS и подключать их к проекту</li>
-                            </ul>
-                          </div></a>
-                        <div class="course-tmb-bottom">
-                          <div class="row">
-                            <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
-                            <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="course-tmb">
-                      <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
-                          <div class="course-tmb-top-content">
-                            <div class="course-tmb-header">
-                              <div class="course-tmb-sup-ttl">Курс 3</div>
-                              <h3>Название курса 3</h3>
-                            </div>
-                            <div class="course-tmb-price">
-                              <p>30&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
-                            </div>
-                            <div class="h5">Кому подойдет?</div>
-                            <p>Любой уровень подготовки</p>
-                            <div class="h5"> Чему научим?</div>
-                            <ul class="course-ul">
-                              <li>Основы html, css, js</li>
-                              <li>Создавать адаптивную верстку на Bootstrap4</li>
-                              <li>Писать стили на CSS и подключать их к проекту</li>
-                              <li>Писать JS скрипты</li>
-                            </ul>
-                          </div></a>
-                        <div class="course-tmb-bottom">
-                          <div class="row">
-                            <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
-                            <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="course-tmb">
-                      <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
-                          <div class="course-tmb-top-content">
-                            <div class="course-tmb-header">
-                              <div class="course-tmb-sup-ttl">Курс 4</div>
-                              <h3>Название курса 4</h3>
-                            </div>
-                            <div class="course-tmb-price">
-                              <p>10&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
-                            </div>
-                            <div class="h5">Кому подойдет?</div>
-                            <p>Любой уровень подготовки</p>
-                            <div class="h5"> Чему научим?</div>
-                            <ul class="course-ul">
-                              <li>Основы html, css, js</li>
-                              <li>Создавать адаптивную верстку на Bootstrap4</li>
-                            </ul>
-                          </div></a>
-                        <div class="course-tmb-bottom">
-                          <div class="row">
-                            <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
-                            <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="course-tmb">
-                      <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
-                          <div class="course-tmb-top-content">
-                            <div class="course-tmb-header">
-                              <div class="course-tmb-sup-ttl">Курс 5</div>
-                              <h3>Название курса 5</h3>
-                            </div>
-                            <div class="course-tmb-price">
-                              <p>20&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
-                            </div>
-                            <div class="h5">Кому подойдет?</div>
-                            <p>Любой уровень подготовки</p>
-                            <div class="h5"> Чему научим?</div>
-                            <ul class="course-ul">
-                              <li>Основы html, css, js</li>
-                              <li>Создавать адаптивную верстку на Bootstrap4</li>
-                              <li>Писать стили на CSS и подключать их к проекту</li>
-                            </ul>
-                          </div></a>
-                        <div class="course-tmb-bottom">
-                          <div class="row">
-                            <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
-                            <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slide">
-                    <div class="course-tmb">
-                      <div class="course-tmb-inner"><a class="course-tmb-top" href="#">
-                          <div class="course-tmb-top-content">
-                            <div class="course-tmb-header">
-                              <div class="course-tmb-sup-ttl">Курс 6</div>
-                              <h3>Название курса 6</h3>
-                            </div>
-                            <div class="course-tmb-price">
-                              <p>30&nbsp;000&nbsp;₽ <span>/ 1&nbsp;месяц</span></p>
-                            </div>
-                            <div class="h5">Кому подойдет?</div>
-                            <p>Любой уровень подготовки</p>
-                            <div class="h5"> Чему научим?</div>
-                            <ul class="course-ul">
-                              <li>Основы html, css, js</li>
-                              <li>Создавать адаптивную верстку на Bootstrap4</li>
-                              <li>Писать стили на CSS и подключать их к проекту</li>
-                              <li>Писать JS скрипты</li>
-                            </ul>
-                          </div></a>
-                        <div class="course-tmb-bottom">
-                          <div class="row">
-                            <div class="col course-bottom-col-1"><a class="btn btn-1 btn-1-medium" href="#" data-toggle="modal" data-target="#consultModal">Получить консультацию</a></div>
-                            <div class="col course-bottom-col-2"><a href="#">Узнать больше</a></div>
-                          </div>
-                        </div>
+                      <div class="info-tmb info-tmb-price">
+                        <div class="info-tmb-ttl">Стоимость курса:</div>
+                        <div class="info-tmb-text">25 500 ₽</div>
                       </div>
                     </div>
                   </div>
@@ -1254,385 +1463,196 @@
           </div>
         </div>
       </div>
-      <!-- Другие курсы END-->
-      <!-- Картинка 2-->
-      <div class="section section-profession-pic">
-        <div class="marquee pic-marquee">
-          <div class="marquee-content">
-            <div class="marquee-list">
-              <div class="marquee-row">
-                <div class="marquee-item"><img src="images/professions-pic-2.svg"></div>
-              </div>
+      <div class="modal fade small-modal" id="callbackModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <h2>Поможем в выборе</h2>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- Картинка 2 END-->
-    </main>
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="row">
-            <div class="col footer-col-1">
-              <div class="footer-logo"><a href="#"><img src="images/footer-logo.svg" alt="Pumpskill"></a></div>
-              <div class="footer-copy">
-                <p>© 2020 PumpSkill</p>
+            <div class="modal-body">
+              <div class="modal-text">
+                <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы</p>
               </div>
-              <div class="footer-agree">
-                <p><a href="#">Пользовательское соглашение</a></p>
-              </div>
-              <div class="footer-dev-over-wrapper">
-                <div class="cont">
-                  <div class="footer-dev-wrapper"><a class="footer-dev" href="#">Made&nbsp;by <span>PARADIGMA</span></a></div>
-                  <div class="footer-art-direction">
-                    <p>Art direction by&nbsp;<a href="#">Gromadin</a></p>
+              <div class="modal-form">
+                <form>
+                  <div class="form-group">
+                    <label class="placeholder" for="callback_phone">Телефон</label>
+                    <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col footer-col-2">
-              <div class="footer-ttl">Pumpskill</div>
-              <ul class="footer-menu">
-                <li><a href="#">О&nbsp;школе</a></li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="#">Выбрать профессию</a></li>
-              </ul>
-            </div>
-            <div class="col footer-col-3">
-              <div class="footer-ttl">Контакты</div>
-              <div class="footer-contacts">
-                <div class="footer-phone">
-                  <div class="footer-phone-num"><a href="tel:8 (800) 302-40-12">8 (800) 302-40-12</a></div>
-                  <div class="footer-phone-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Обратный звонок</a></div>
-                </div>
-                <div class="footer-soclinks-wrapper">
-                  <div class="footer-soclinks"><a class="footer-soclink footer-soclink-fb" href="#"><img class="svg-inline" src="images/footer-fb.svg"></a><a class="footer-soclink footer-soclink-vk" href="#"><img class="svg-inline" src="images/footer-vk.svg"></a><a class="footer-soclink footer-soclink-twitter" href="#"><img class="svg-inline" src="images/footer-twitter.svg"></a><a class="footer-soclink footer-soclink-telegram" href="#"><img class="svg-inline" src="images/footer-telegram.svg"></a><a class="footer-soclink footer-soclink-whatsapp" href="#"><img class="svg-inline" src="images/footer-whatsapp.svg"></a></div>
-                </div>
+                  <div class="form-footer">
+                    <input class="btn btn-2" type="submit" value="Отправить">
+                  </div>
+                  <div class="form-agree">
+                    <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <div class="modal fade form-modal" id="consultModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="order-form-wrapper">
-            <div class="section-header">
-              <h2>Получи полную программу и&nbsp;консультацию</h2>
+      <div class="modal fade" id="reviewModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="ajax-modal-content"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade login-modal" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <h2>Вход</h2>
             </div>
-            <div class="row">
-              <div class="col order-col-1">
-                <div class="order-form">
-                  <form>
-                    <input type="hidden" name="program_modal_course" id="program_modal_course">
-                    <div class="row">
-                      <div class="col col-12">
-                        <div class="form-group">
-                          <label class="placeholder" for="program_modal_name">Ваше имя</label>
-                          <input type="text" name="program_modal_name" id="program_modal_name" required>
+            <div class="modal-body">
+              <h5>Войти с помощью</h5>
+              <div class="login-extrenal"><a class="login-extrenal-item" href="#"><img src="images/ico-gmail.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-facebook.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-vk.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-github.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-mailru.png"></a></div>
+              <h5>Войти по e-mail</h5>
+              <div class="modal-form login-form">
+                <form>
+                  <div class="row">
+                    <div class="col col-12 col-login-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="email_email">E-mail</label>
+                        <input type="email" name="email_email" id="email_email" required>
+                      </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="email_password">Пароль</label>
+                        <input class="password" type="password" name="email_password" id="email_password" required>
+                      </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-checkboxes">
+                        <div class="form-checkbox">
+                          <input type="checkbox" name="login_remember" id="login_remember">
+                          <label for="login_remember">Запомнить меня</label>
                         </div>
                       </div>
-                      <div class="col col-order-phone">
-                        <div class="form-group">
-                          <label class="placeholder" for="program_modal_phone">Телефон</label>
-                          <input class="input-phone phone-email-group" type="text" name="program_modal_phone" id="program_modal_phone">
-                        </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="forgot-link-wrapper"><a href="#">Забыли пароль?</a></div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-footer">
+                        <input class="btn btn-3" type="submit" value="Войти">
                       </div>
-                      <div class="col col-order-or">
-                        <p>или</p>
-                      </div>
-                      <div class="col col-order-email">
-                        <div class="form-group">
-                          <label class="placeholder" for="program_modal_email">E-mail</label>
-                          <input class="phone-email-group" type="email" name="program_modal_email" id="program_modal_email">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-footer">
-                      <input class="btn btn-2" type="submit" value="Оформить заказ">
-                    </div>
-                    <div class="form-agree">
-                      <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col order-col-2">
-                <div class="order-descr">
-                  <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы.</p>
-                  <div class="order-soclinks-wrapper">
-                    <div class="order-soclinks-ttl">
-                      <p>Или пишите нам:</p>
-                    </div>
-                    <div class="order-soclinks">
-                      <div class="soclinks"><a class="soclink soclink-whatsapp" href="#"></a><a class="soclink soclink-telegram" href="#"></a></div>
                     </div>
                   </div>
-                </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <h3>Вы у нас впервые?</h3>
+                <div class="modal-register-button-wrapper"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#registerModal">Зарегистрироваться</a></div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="modal fade login-modal" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header">
+              <h2>Регистрация</h2>
+            </div>
+            <div class="modal-body">
+              <div class="modal-form login-form">
+                <form>
+                  <div class="row">
+                    <div class="col col-12">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_name">Ваше имя</label>
+                        <input type="text" name="register_name" id="register_name" required>
+                      </div>
+                    </div>
+                    <div class="col col-12">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_lastname">Ваша фамилия</label>
+                        <input type="text" name="register_lastname" id="register_lastname" required>
+                      </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_phone">Телефон</label>
+                        <input class="input-phone" type="text" name="register_phone" id="register_phone" required>
+                      </div>
+                    </div>
+                    <div class="col col-12">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_email">E-mail</label>
+                        <input type="email" name="register_email" id="register_email" required>
+                      </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_password">Пароль</label>
+                        <input class="password" type="password" name="register_password" id="register_password" required>
+                      </div>
+                    </div>
+                    <div class="col col-login-narrow">
+                      <div class="form-group">
+                        <label class="placeholder" for="register_password_repeat">Повторите пароль</label>
+                        <input class="password-repeat" type="password" name="register_password_repeat" id="register_password_repeat" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-footer">
+                    <input class="btn btn-2" type="submit" value="Зарегистрироваться">
+                  </div>
+                  <div class="form-agree">
+                    <p>Нажимая кнопку «Зарегистрироваться» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade small-modal" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+              <div class="success-modal-ttl">
+                <p>Заявка отправлена</p>
+              </div>
+              <div class="success-modal-text">
+                <p>Ожидайте звонка менеджера или письма на почту</p>
+              </div>
+              <div class="success-modal-button">
+                <button class="btn btn-3" type="button" data-dismiss="modal" aria-label="Close">Понятно</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/jquery.mobile.custom.min.js"></script>
+      <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wNumb.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/fancybox/jquery.fancybox.min.js"></script>
+      <script src="js/greensock/TweenMax.min.js"></script>
+      <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+      <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+      <script src="js/iscroll-probe.js"></script>
+      <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+      <script src="js/jquery.mousewheel.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+      <script src="js/nouislider.js"></script><script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/animations.js"></script>
     </div>
-    <div class="modal fade form-modal" id="orderModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="order-form-wrapper">
-            <div class="section-header">
-              <h2>Запишись сейчас и получи скидку на курс 40%</h2>
-            </div>
-            <div class="row">
-              <div class="col order-col-1">
-                <div class="order-form">
-                  <form>
-                    <div class="row">
-                      <div class="col col-12">
-                        <div class="form-group">
-                          <label class="placeholder" for="order_modal_name">Ваше имя</label>
-                          <input type="text" name="order_modal_name" id="order_modal_name" required>
-                        </div>
-                      </div>
-                      <div class="col col-order-phone">
-                        <div class="form-group">
-                          <label class="placeholder" for="order_modal_phone">Телефон</label>
-                          <input class="input-phone phone-email-group" type="text" name="order_modal_phone" id="order_modal_phone">
-                        </div>
-                      </div>
-                      <div class="col col-order-or">
-                        <p>или</p>
-                      </div>
-                      <div class="col col-order-email">
-                        <div class="form-group">
-                          <label class="placeholder" for="order_modal_email">E-mail</label>
-                          <input class="phone-email-group" type="email" name="order_modal_email" id="order_modal_email">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-footer">
-                      <input class="btn btn-2" type="submit" value="Оформить заказ">
-                    </div>
-                    <div class="form-agree">
-                      <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col order-col-2">
-                <div class="order-descr">
-                  <div class="info-list info-list-alt">
-                    <div class="info-tmb">
-                      <div class="info-tmb-ttl">Старт курса:</div>
-                      <div class="info-tmb-text">15 ноября</div>
-                    </div>
-                    <div class="info-tmb">
-                      <div class="info-tmb-ttl">Осталось:</div>
-                      <div class="info-tmb-text">3 места</div>
-                    </div>
-                    <div class="info-tmb info-tmb-price">
-                      <div class="info-tmb-ttl">Стоимость курса:</div>
-                      <div class="info-tmb-text">25 500 ₽</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade small-modal" id="callbackModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="modal-header">
-            <h2>Поможем в выборе</h2>
-          </div>
-          <div class="modal-body">
-            <div class="modal-text">
-              <p>Если у вас есть вопросы о формате или вы не знаете что выбрать, оставьте свой номер: мы позвоним, чтобы ответить на все ваши вопросы</p>
-            </div>
-            <div class="modal-form">
-              <form>
-                <div class="form-group">
-                  <label class="placeholder" for="callback_phone">Телефон</label>
-                  <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
-                </div>
-                <div class="form-footer">
-                  <input class="btn btn-2" type="submit" value="Отправить">
-                </div>
-                <div class="form-agree">
-                  <p>Нажимая кнопку «Оформить заказ» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="reviewModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="ajax-modal-content"></div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade login-modal" id="loginModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="modal-header">
-            <h2>Вход</h2>
-          </div>
-          <div class="modal-body">
-            <h5>Войти с помощью</h5>
-            <div class="login-extrenal"><a class="login-extrenal-item" href="#"><img src="images/ico-gmail.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-facebook.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-vk.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-github.png"></a><a class="login-extrenal-item" href="#"><img src="images/ico-mailru.png"></a></div>
-            <h5>Войти по e-mail</h5>
-            <div class="modal-form login-form">
-              <form>
-                <div class="row">
-                  <div class="col col-12 col-login-narrow">
-                    <div class="form-group">
-                      <label class="placeholder" for="email_email">E-mail</label>
-                      <input type="email" name="email_email" id="email_email" required>
-                    </div>
-                  </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-group">
-                      <label class="placeholder" for="email_password">Пароль</label>
-                      <input class="password" type="password" name="email_password" id="email_password" required>
-                    </div>
-                  </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-checkboxes">
-                      <div class="form-checkbox">
-                        <input type="checkbox" name="login_remember" id="login_remember">
-                        <label for="login_remember">Запомнить меня</label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col col-login-narrow">
-                    <div class="forgot-link-wrapper"><a href="#">Забыли пароль?</a></div>
-                  </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-footer">
-                      <input class="btn btn-3" type="submit" value="Войти">
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <h3>Вы у нас впервые?</h3>
-              <div class="modal-register-button-wrapper"><a class="btn btn-2" href="#" data-toggle="modal" data-target="#registerModal">Зарегистрироваться</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade login-modal" id="registerModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="modal-header">
-            <h2>Регистрация</h2>
-          </div>
-          <div class="modal-body">
-            <div class="modal-form login-form">
-              <form>
-                <div class="row">
-                  <div class="col col-12">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_name">Ваше имя</label>
-                      <input type="text" name="register_name" id="register_name" required>
-                    </div>
-                  </div>
-                  <div class="col col-12">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_lastname">Ваша фамилия</label>
-                      <input type="text" name="register_lastname" id="register_lastname" required>
-                    </div>
-                  </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_phone">Телефон</label>
-                      <input class="input-phone" type="text" name="register_phone" id="register_phone" required>
-                    </div>
-                  </div>
-                  <div class="col col-12">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_email">E-mail</label>
-                      <input type="email" name="register_email" id="register_email" required>
-                    </div>
-                  </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_password">Пароль</label>
-                      <input class="password" type="password" name="register_password" id="register_password" required>
-                    </div>
-                  </div>
-                  <div class="col col-login-narrow">
-                    <div class="form-group">
-                      <label class="placeholder" for="register_password_repeat">Повторите пароль</label>
-                      <input class="password-repeat" type="password" name="register_password_repeat" id="register_password_repeat" required>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-footer">
-                  <input class="btn btn-2" type="submit" value="Зарегистрироваться">
-                </div>
-                <div class="form-agree">
-                  <p>Нажимая кнопку «Зарегистрироваться» Вы даете свое согласие с&nbsp;<a href="#">политикой обработки персональных данных</a></p>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade small-modal" id="successModal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-          <div class="modal-body">
-            <div class="success-modal-ttl">
-              <p>Заявка отправлена</p>
-            </div>
-            <div class="success-modal-text">
-              <p>Ожидайте звонка менеджера или письма на почту</p>
-            </div>
-            <div class="success-modal-button">
-              <button class="btn btn-3" type="button" data-dismiss="modal" aria-label="Close">Понятно</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.mobile.custom.min.js"></script>
-    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/additional-methods.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/wNumb.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/fancybox/jquery.fancybox.min.js"></script>
-    <script src="js/greensock/TweenMax.min.js"></script>
-    <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
-    <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
-    <script src="js/iscroll-probe.js"></script>
-    <script src="js/scrollmagic/ScrollMagic.min.js"></script>
-    <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
-    <script src="js/jquery.mousewheel.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
-    <script src="js/nouislider.js"></script><script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/animations.js"></script>
-  </div>
-</body>
+  </body>
+</html>
