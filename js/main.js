@@ -48,6 +48,26 @@ var baseUrl = "";
 
 $(document).ready(function() {
 
+	$("body").on("click", ".tool-tmb", function () {
+
+		var curTmb = $(this);
+
+		var curDescr = $(".tool-tmb").closest(".skill-tmb").find(".tool-descr").filter(function () {
+
+			return $(this).prevAll().length == curTmb.closest("li").prevAll().length;
+
+		});
+
+		$(".tool-tmb").not($(this)).removeClass("active");
+
+		$(this).toggleClass("active");
+
+		$(".tool-descr").not(curDescr).hide();
+
+		curDescr.fadeToggle(200);
+
+	});
+
 	// Calc range
 
 	$(".calc-result-slider").slick({
